@@ -23,3 +23,8 @@ export const Flex = styled.div<{
     width: ${({ width }) => (width ? `${width}px` : '100%')};
     height: ${({ height }) => (height ? `${height}px` : '100%')};
 `;
+
+export const Line = styled.div`
+    width: 100%;
+    border-bottom: 1.1px solid #000;
+`;
