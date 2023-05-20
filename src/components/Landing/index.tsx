@@ -2,6 +2,8 @@ import Logo from '../../assets/break-logo.svg';
 import MenuButton from '../../assets/menubar-button.svg';
 import styled from '@emotion/styled';
 import { Flex, Line } from '../common/common';
+import Image from 'next/image';
+import { MovingImage } from './MovingImage';
 
 export const Landing = () => {
     return (
@@ -18,6 +20,9 @@ export const Landing = () => {
                         </div>
                     </Flex>
                     <Line />
+                    <Flex align="flex-start" justify="space-between">
+                        <MovingImage img={['', '', '', '']} border={[6.25, 0, 0, 0]} />
+                    </Flex>
                 </div>
             </Flex>
         </Wrapper>
