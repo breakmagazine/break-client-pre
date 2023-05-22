@@ -1,3 +1,8 @@
+import { Landing } from '../components/Landing/index';
 export default function Home() {
-    return <>파이팅슨...</>;
+    return (
+        <>
+            <Landing />
+        </>
+    );
 }
