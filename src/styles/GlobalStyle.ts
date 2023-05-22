@@ -4,7 +4,7 @@ import emotionReset from 'emotion-reset';
 export const globalStyle = css`
     ${emotionReset}
     body {
-        font-family: 'Pretendard';
+        font-family: 'Helvetica';
     }
     button {
         background: inherit;

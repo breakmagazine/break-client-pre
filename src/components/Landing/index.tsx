@@ -2,7 +2,6 @@ import Logo from '../../assets/break-logo.svg';
 import MenuButton from '../../assets/menubar-button.svg';
 import styled from '@emotion/styled';
 import { Flex, Line } from '../common/common';
-import Image from 'next/image';
 import { MovingImage } from './MovingImage';
 
 export const Landing = () => {
@@ -22,6 +21,7 @@ export const Landing = () => {
                     <Line />
                     <Flex align="flex-start" justify="space-between">
                         <MovingImage img={['', '', '', '']} border={[6.25, 0, 0, 0]} />
+                        <div className="item item4"></div>
                     </Flex>
                 </div>
             </Flex>
@@ -99,9 +99,9 @@ const Wrapper = styled.div`
     }
 
     .item4 {
-        grid-row: 2 / 4;
-        grid-column: 2 / 3;
-        background-color: green;
+        width: 40.08vw;
+        height: 55.13vw;
+        background-color: gray;
     }
 
     .item5 {

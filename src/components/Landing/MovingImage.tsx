@@ -20,7 +20,7 @@ export type BorderRadius = number | [number, number] | [number, number, number, 
 export const MovingImage = ({ img, border, ...props }: MovingImageProps) => {
     return (
         <Wrapper border={border}>
-            <Image className="item image1" src="" alt="" />
+            <Image className="image" src="" alt="" />
         </Wrapper>
     );
 };
@@ -33,7 +33,7 @@ const Wrapper = styled.div<{
 
     background-color: #000;
 
-    Image {
+    .image {
         ${({ border }) => css`
             border-radius: ${typeof border === 'number'
                 ? `${border}vw`
@@ -41,6 +41,9 @@ const Wrapper = styled.div<{
                 ? `${border[0]}vw ${border[1]}vw`
                 : `${border[0]}vw ${border[1]}vw ${border[2]}vw ${border[3]}vw`};
         `}
+
+        width: 100%;
+        height: 100%;
 
         border: none;
     }
