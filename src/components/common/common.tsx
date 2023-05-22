@@ -27,7 +27,7 @@ export const Flex = styled.div<{
 
 export const Line = styled.div`
     width: 100%;
-    border-bottom: 1.1px solid #000;
+    border-bottom: 0.076vw solid #000;
 `;
 
 export const Text = styled.p<{
