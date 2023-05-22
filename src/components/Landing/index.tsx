@@ -1,9 +1,10 @@
-import Logo from '../../assets/break-logo.svg';
-import MenuButton from '../../assets/menubar-button.svg';
+import Logo from '../../assets/svg/break-logo.svg';
+import MenuButton from '../../assets/svg/menubar-button.svg';
 import styled from '@emotion/styled';
 import { Flex, Line } from '../common/common';
 import { MovingImage } from './MovingImage';
 import { UpperTextArea } from './UpperTextArea';
+import { UpperCTAArea } from './UpperCTAArea';
 
 export const Landing = () => {
     return (
@@ -22,7 +23,11 @@ export const Landing = () => {
                     <Line />
                     <Flex align="flex-start" justify="space-between">
                         <MovingImage img={['', '', '', '']} border={[6.25, 0, 0, 0]} />
-                        <UpperTextArea />
+                        <Flex direction="column" align="flex-start">
+                            <UpperTextArea />
+                            <UpperCTAArea />
+                            <Line />
+                        </Flex>
                     </Flex>
                 </div>
             </Flex>

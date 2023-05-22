@@ -28,7 +28,7 @@ const TEXT = {
 
 export const UpperTextArea = () => {
     return (
-        <div>
+        <>
             <Wrapper direction="column">
                 <Space height={1.66} />
                 <Flex direction="column" gap={3.05}>
@@ -39,13 +39,13 @@ export const UpperTextArea = () => {
                 <Space height={1.59} />
             </Wrapper>
             <Line />
-        </div>
+        </>
     );
 };
 
 const Wrapper = styled(Flex)`
     width: 40.08vw;
-    height: 55.13vw;
+    height: 55vw;
 
     padding: 0vw 2.01vw 0vw 1.94vw;
 `;
