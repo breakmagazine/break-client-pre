@@ -21,6 +21,7 @@ export const Flex = styled.div<{
     align-items: ${({ align }) => (align ? `${align}` : 'center')};
     gap: ${({ gap }) => (gap ? `${gap}vw` : '0px')};
 
+    width: ${({ width }) => (width ? `${width}vw` : '100%')};
     height: ${({ height }) => (height ? `${height}vw` : '100%')};
 `;
 
@@ -29,7 +30,7 @@ export const Line = styled.div`
     border-bottom: 1.1px solid #000;
 `;
 
-export const Text = styled.div<{
+export const Text = styled.p<{
     typo: KeyOfTypo;
 }>`
     ${({ typo }) => theme.typo[typo]};

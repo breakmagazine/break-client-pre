@@ -23,11 +23,19 @@ export const Landing = () => {
                     <Line />
                     <Flex align="flex-start" justify="space-between">
                         <MovingImage img={['', '', '', '']} border={[6.25, 0, 0, 0]} />
-                        <Flex direction="column" align="flex-start">
+                        <div>
                             <UpperTextArea />
                             <UpperCTAArea />
                             <Line />
-                        </Flex>
+                        </div>
+                    </Flex>
+                    <Flex align="flex-start" justify="space-between">
+                        <div>
+                            <UpperTextArea />
+                            <UpperCTAArea />
+                            <Line />
+                        </div>
+                        <MovingImage img={['', '', '', '']} border={[0, 0, 0, 6.25]} />
                     </Flex>
                 </div>
             </Flex>
