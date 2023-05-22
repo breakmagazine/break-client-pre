@@ -3,6 +3,7 @@ import MenuButton from '../../assets/menubar-button.svg';
 import styled from '@emotion/styled';
 import { Flex, Line } from '../common/common';
 import { MovingImage } from './MovingImage';
+import { UpperTextArea } from './UpperTextArea';
 
 export const Landing = () => {
     return (
@@ -21,7 +22,7 @@ export const Landing = () => {
                     <Line />
                     <Flex align="flex-start" justify="space-between">
                         <MovingImage img={['', '', '', '']} border={[6.25, 0, 0, 0]} />
-                        <div className="item item4"></div>
+                        <UpperTextArea />
                     </Flex>
                 </div>
             </Flex>
@@ -98,11 +99,11 @@ const Wrapper = styled.div`
         }
     }
 
-    .item4 {
+    /* .item4 {
         width: 40.08vw;
         height: 55.13vw;
         background-color: gray;
-    }
+    } */
 
     .item5 {
         grid-row: 2 / 3;

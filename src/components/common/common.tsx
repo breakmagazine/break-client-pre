@@ -21,7 +21,6 @@ export const Flex = styled.div<{
     align-items: ${({ align }) => (align ? `${align}` : 'center')};
     gap: ${({ gap }) => (gap ? `${gap}vw` : '0px')};
 
-    width: ${({ width }) => (width ? `${width}vw` : '100%')};
     height: ${({ height }) => (height ? `${height}vw` : '100%')};
 `;
 

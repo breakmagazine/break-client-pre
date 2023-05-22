@@ -12,9 +12,9 @@ interface TextSetProps {
 
 export const TextSet = ({ title, description }: TextSetProps) => {
     return (
-        <Flex direction="column" gap={1.38}>
+        <Flex direction="column" gap={1.38} align="flex-start" justify="flex-start">
             <Text typo="Title1">{title}</Text>
-            <Flex direction="column" gap={2.08}>
+            <Flex direction="column" gap={2.08} align="flex-start" justify="flex-start">
                 {description.map((el, index) => (
                     <Text key={index} typo="Body1">
                         {el}
