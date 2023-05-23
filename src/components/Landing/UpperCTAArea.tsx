@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import Asterisk from '../../assets/svg/asterisk.svg';
-import { Flex } from '../common/common';
+import { Flex, Line } from '../common/common';
 import { CTAButton } from './CTAButton';
 
 export const UpperCTAArea = () => {
@@ -19,5 +19,5 @@ const Wrapper = styled(Flex)`
         height: 2.81vw;
     }
 
-    height: 7.63vw;
+    height: 7.554vw;
 `;
