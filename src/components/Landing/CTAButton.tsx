@@ -19,12 +19,12 @@ export const CTAButton = (props: ButtonHTMLAttributes<HTMLButtonElement>) => {
 const StyledButton = styled.button`
     position: relative;
 
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 
     .item {
         width: 17.5vw;
-        height: 5.69vw;
+        height: 8vw;
     }
 
     .cta-hover {
