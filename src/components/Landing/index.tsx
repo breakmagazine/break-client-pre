@@ -5,6 +5,8 @@ import { Flex, Line } from '../common/common';
 import { MovingImage } from './MovingImage';
 import { UpperTextArea } from './UpperTextArea';
 import { UpperCTAArea } from './UpperCTAArea';
+import { LowerTextArea } from './LowerTextArea';
+import { LowerCTAArea } from './LowerCTAArea';
 
 export const Landing = () => {
     return (
@@ -31,8 +33,8 @@ export const Landing = () => {
                     </Flex>
                     <Flex align="flex-start" justify="space-between">
                         <div>
-                            <UpperTextArea />
-                            <UpperCTAArea />
+                            <LowerTextArea />
+                            <LowerCTAArea />
                             <Line />
                         </div>
                         <MovingImage img={['', '', '', '']} border={[0, 0, 0, 6.25]} />

@@ -48,4 +48,5 @@ const Wrapper = styled(Flex)`
     height: 55vw;
 
     padding: 0vw 2.01vw 0vw 1.94vw;
+    box-sizing: border-box;
 `;

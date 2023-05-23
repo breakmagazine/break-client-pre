@@ -37,7 +37,7 @@ export const typo = {
         font-family: 'SUIT Variable', sans-serif, 'Apple SD Gothic Neo';
         font-weight: 900;
         font-size: ${calcVw(66)};
-        line-height: 140;
+        line-height: 140%;
     `,
     MovingText: css`
         font-family: 'Helvetica', 'Apple SD Gothic Neo';
