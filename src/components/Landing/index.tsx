@@ -1,20 +1,25 @@
 import Logo from '../../assets/svg/break-logo.svg';
 import MenuButton from '../../assets/svg/menubar-button.svg';
+import LowerMenuButton from '../../assets/svg/menubar-button-lower.svg';
 import styled from '@emotion/styled';
-import { Flex, Line } from '../common/common';
+import { Flex, Line, Space } from '../common/common';
 import { MovingImage } from './MovingImage';
 import { UpperTextArea } from './UpperTextArea';
 import { UpperCTAArea } from './UpperCTAArea';
 import { LowerTextArea } from './LowerTextArea';
 import { LowerCTAArea } from './LowerCTAArea';
+import { MovingText } from './MovingText';
 
 export const Landing = () => {
     return (
         <Wrapper>
             <Flex align="flex-start" justify="flex-start">
-                <div className="item item1">
-                    <Logo className="item logo" />
-                </div>
+                <Flex className="item item1" direction="column" align="flex-start" justify="space-between">
+                    <Flex align="flex-start">
+                        <Logo className="item logo" />
+                    </Flex>
+                    <LowerMenuButton className="item menu-button-lower" />
+                </Flex>
                 <div>
                     <Flex align="flex-start" justify="space-between">
                         <div className="item item2">2023</div>
@@ -39,6 +44,12 @@ export const Landing = () => {
                         </div>
                         <MovingImage img={['', '', '', '']} border={[0, 0, 0, 6.25]} />
                     </Flex>
+                    <Flex direction="column">
+                        <Space height={4.56} />
+                        <MovingText direction={'right'} />
+                        <Space height={2.75} />
+                        <MovingText direction={'left'} />
+                    </Flex>
                 </div>
             </Flex>
         </Wrapper>
@@ -59,7 +70,7 @@ export const Landing = () => {
 
 const Wrapper = styled.div`
     width: 100vw;
-    height: 152vw;
+    height: 162vw;
 
     box-sizing: border-box;
 
@@ -74,15 +85,17 @@ const Wrapper = styled.div`
         height: 100%;
         padding-top: 2.98vw;
 
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-
         border-right: 0.076vw solid #000;
 
         .logo {
             width: 5.13vw;
             height: 19.44vw;
+        }
+
+        .menu-button-lower {
+            width: 6.18vw;
+
+            cursor: pointer;
         }
     }
 

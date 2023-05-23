@@ -20,7 +20,7 @@ export type BorderRadius = number | [number, number] | [number, number, number, 
 export const MovingImage = ({ img, border, ...props }: MovingImageProps) => {
     return (
         <Wrapper border={border}>
-            <Image className="image" src="" alt="" />
+            <Image loading="lazy" className="image" src="" alt="" />
         </Wrapper>
     );
 };

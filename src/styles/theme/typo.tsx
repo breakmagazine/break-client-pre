@@ -43,6 +43,6 @@ export const typo = {
         font-family: 'Helvetica', 'Apple SD Gothic Neo';
         font-weight: 700;
         font-size: ${calcVw(150)};
-        line-height: 120%;
+        line-height: 80%;
     `,
 } as const;
