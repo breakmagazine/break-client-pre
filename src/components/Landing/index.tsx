@@ -67,6 +67,8 @@ const Wrapper = styled.div`
 
     box-sizing: border-box;
 
+    position: relative;
+
     .item1 {
         width: 10.06vw;
         height: 100%;
