@@ -20,8 +20,8 @@ const StyledButton = styled.button`
     position: relative;
 
     .item {
-        width: 17.49vw;
-        height: 5.675vw;
+        width: 17.5vw;
+        height: 5.69vw;
     }
 
     .cta-hover {
