@@ -1,18 +1,30 @@
 import Logo from '../../assets/svg/break-logo.svg';
 import MenuButton from '../../assets/svg/menubar-button.svg';
+import LowerMenuButton from '../../assets/svg/menubar-button-lower.svg';
 import styled from '@emotion/styled';
-import { Flex, Line } from '../common/common';
+import { Flex, Line, Space } from '../common/common';
 import { MovingImage } from './MovingImage';
 import { UpperTextArea } from './UpperTextArea';
 import { UpperCTAArea } from './UpperCTAArea';
+import { LowerTextArea } from './LowerTextArea';
+import { LowerCTAArea } from './LowerCTAArea';
+import { MovingText } from './MovingText';
+
+const IMG_SRC = {
+    upper: ['/images/upper1.png', '/images/upper2.png', '/images/upper3.png', '/images/upper4.png'],
+    lower: ['/images/lower1.png', '/images/lower2.png', '/images/lower3.png', '/images/lower4.png'],
+};
 
 export const Landing = () => {
     return (
         <Wrapper>
             <Flex align="flex-start" justify="flex-start">
-                <div className="item item1">
-                    <Logo className="item logo" />
-                </div>
+                <Flex className="item item1" direction="column" align="flex-start" justify="space-between">
+                    <Flex align="flex-start">
+                        <Logo className="item logo" />
+                    </Flex>
+                    <LowerMenuButton className="item menu-button-lower" />
+                </Flex>
                 <div>
                     <Flex align="flex-start" justify="space-between">
                         <div className="item item2">2023</div>
@@ -22,7 +34,7 @@ export const Landing = () => {
                     </Flex>
                     <Line />
                     <Flex align="flex-start" justify="space-between">
-                        <MovingImage img={['', '', '', '']} border={[6.25, 0, 0, 0]} />
+                        <MovingImage img={IMG_SRC.upper} border={[6.25, 0, 0, 0]} />
                         <div>
                             <UpperTextArea />
                             <UpperCTAArea />
@@ -31,11 +43,17 @@ export const Landing = () => {
                     </Flex>
                     <Flex align="flex-start" justify="space-between">
                         <div>
-                            <UpperTextArea />
-                            <UpperCTAArea />
+                            <LowerTextArea />
+                            <LowerCTAArea />
                             <Line />
                         </div>
-                        <MovingImage img={['', '', '', '']} border={[0, 0, 0, 6.25]} />
+                        <MovingImage img={IMG_SRC.lower} border={[0, 0, 0, 6.25]} />
+                    </Flex>
+                    <Flex direction="column">
+                        <Space height={4.56} />
+                        <MovingText direction={'right'} />
+                        <Space height={2.75} />
+                        <MovingText direction={'left'} />
                     </Flex>
                 </div>
             </Flex>
@@ -43,23 +61,14 @@ export const Landing = () => {
     );
 };
 
-{
-    /* <div>
-<div className="item item4">4</div>
-<div className="item item5">5</div>
-<div className="item item6">6</div>
-<div className="item item7">7</div>
-<div className="item item8">8</div>
-<div className="item item9">9</div>
-<div className="item item9">10</div>
-</div> */
-}
-
 const Wrapper = styled.div`
     width: 100vw;
-    height: 152vw;
+    height: 162vw;
 
     box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
 
     /* grid-template-columns: 10.06vw, 17.15vw, 23.47vw;
     grid-template-rows: repeat(6, auto); */
@@ -69,15 +78,17 @@ const Wrapper = styled.div`
         height: 100%;
         padding-top: 2.98vw;
 
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-
         border-right: 0.076vw solid #000;
 
         .logo {
             width: 5.13vw;
             height: 19.44vw;
+        }
+
+        .menu-button-lower {
+            width: 6.18vw;
+
+            cursor: pointer;
         }
     }
 
