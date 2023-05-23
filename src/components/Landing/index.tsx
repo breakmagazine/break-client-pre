@@ -73,7 +73,7 @@ const Wrapper = styled.div`
         justify-content: center;
         align-items: flex-start;
 
-        border-right: 1.01px solid #000;
+        border-right: 0.076vw solid #000;
 
         .logo {
             width: 5.13vw;
@@ -93,7 +93,7 @@ const Wrapper = styled.div`
         justify-content: center;
         align-items: center;
 
-        border-right: 1.01px solid #000;
+        border-right: 0.076vw solid #000;
     }
 
     .item3 {
