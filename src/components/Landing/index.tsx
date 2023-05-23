@@ -67,12 +67,6 @@ const Wrapper = styled.div`
 
     box-sizing: border-box;
 
-    display: flex;
-    align-items: center;
-
-    /* grid-template-columns: 10.06vw, 17.15vw, 23.47vw;
-    grid-template-rows: repeat(6, auto); */
-
     .item1 {
         width: 10.06vw;
         height: 100%;
