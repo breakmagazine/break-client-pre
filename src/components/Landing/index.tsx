@@ -45,11 +45,11 @@ export const Landing = () => {
                         <div>
                             <LowerTextArea />
                             <LowerCTAArea />
-                            <Line />
                         </div>
                         <VerticalLine />
                         <MovingImage img={IMG_SRC.lower} border={[0, 0, 0, 6.25]} />
                     </Flex>
+                    <Line />
                     <Flex direction="column">
                         <Space height={4.56} />
                         <MovingText direction={'right'} />

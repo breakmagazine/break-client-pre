@@ -16,7 +16,7 @@ const Wrapper = styled(Flex)`
     .percentage {
         padding-left: 2.84vw;
         width: 3.68vw;
-        height: 2.98vw;
+        /* height: 2.98vw; */
     }
 
     height: 9.3vw;
