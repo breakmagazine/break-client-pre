@@ -33,15 +33,14 @@ export const Landing = () => {
                         </div>
                     </Flex>
                     <Line />
-                    <Flex align="flex-start" justify="space-between">
+                    <Flex align="flex-start" justify="flex-start">
                         <MovingImage img={IMG_SRC.upper} border={[6.25, 0, 0, 0]} />
                         <div>
                             <UpperTextArea />
                             <UpperCTAArea />
-                            <Line />
                         </div>
                     </Flex>
-                    <Flex align="flex-start" justify="space-between">
+                    <Flex align="flex-start" justify="flex-start">
                         <div>
                             <LowerTextArea />
                             <LowerCTAArea />

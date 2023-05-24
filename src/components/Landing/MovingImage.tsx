@@ -36,10 +36,11 @@ const Wrapper = styled.div<{
     border: BorderRadius;
 }>`
     width: 49.86vw;
-    height: 62.63vw;
+    height: 62.706vw;
 
     background-color: #000;
 
+    border: 0.076vw solid #000;
     .image {
         ${({ border }) => css`
             border-radius: ${typeof border === 'number'

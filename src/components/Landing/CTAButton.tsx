@@ -23,7 +23,7 @@ const StyledButton = styled.button`
     align-items: center;
 
     .item {
-        width: 17.5vw;
+        width: 17.6vw;
         height: 8vw;
     }
 

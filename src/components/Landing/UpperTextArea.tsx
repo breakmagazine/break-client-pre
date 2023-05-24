@@ -45,7 +45,7 @@ export const UpperTextArea = () => {
 
 const Wrapper = styled(Flex)`
     width: 40.08vw;
-    height: 55vw;
+    height: 55.106vw;
 
     padding: 0vw 2.01vw 0vw 1.94vw;
     box-sizing: border-box;
