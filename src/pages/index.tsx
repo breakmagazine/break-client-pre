@@ -26,7 +26,7 @@ const Wrapper = styled.div`
     align-items: center;
 
     /* 162vw보다 작을 경우 height를 100vh로 지정 */
-    @media (max-height: 162vw) {
+    @media (min-height: 162vw) {
         height: 100vh;
     }
 `;
