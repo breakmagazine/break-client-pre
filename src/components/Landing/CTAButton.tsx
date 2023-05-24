@@ -21,9 +21,10 @@ const StyledButton = styled.button`
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     .item {
-        width: 17.6vw;
+        width: 17.8vw;
         height: 8vw;
     }
 

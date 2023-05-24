@@ -19,5 +19,5 @@ const Wrapper = styled(Flex)`
         height: 2.81vw;
     }
 
-    height: 7.554vw;
+    height: 7.474vw;
 `;
