@@ -1,6 +1,7 @@
 import { css } from '@emotion/css';
 import styled from '@emotion/styled';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 <Image className="item image1" src="" alt="" />;
 
 interface MovingImageProps {
@@ -18,16 +19,23 @@ export type BorderRadius = number | [number, number] | [number, number, number, 
  * [number,number,number,number]
  */
 export const MovingImage = ({ img, border, ...props }: MovingImageProps) => {
+    const [currentImage, setCurrentImage] = useState(img[0]);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const randomIndex = Math.floor(Math.random() * img.length);
+            const randomImage = img[randomIndex];
+
+            setCurrentImage(randomImage);
+        }, 3000); // 3초
+
+        return () => clearInterval(interval);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
     return (
         <Wrapper border={border}>
-            <Image
-                className="image"
-                loading="lazy"
-                src={img[Math.floor(Math.random() * img.length)]}
-                alt=""
-                width={718}
-                height={912}
-            />
+            <Image className="image" loading="lazy" src={currentImage} alt="" width={718} height={912} />
         </Wrapper>
     );
 };
@@ -41,6 +49,18 @@ const Wrapper = styled.div<{
     background-color: #000;
 
     border-right: 0.076vw solid #000;
+
+    /* animation: fadeIn 0.3s ease-in;
+    animation-fill-mode: both;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    } */
 
     .image {
         ${({ border }) => css`
