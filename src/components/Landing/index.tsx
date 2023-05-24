@@ -2,7 +2,7 @@ import Logo from '../../assets/svg/break-logo.svg';
 import MenuButton from '../../assets/svg/menubar-button.svg';
 import LowerMenuButton from '../../assets/svg/menubar-button-lower.svg';
 import styled from '@emotion/styled';
-import { Flex, Line, Space } from '../common/common';
+import { Flex, Line, Space, VerticalLine } from '../common/common';
 import { MovingImage } from './MovingImage';
 import { UpperTextArea } from './UpperTextArea';
 import { UpperCTAArea } from './UpperCTAArea';
@@ -40,12 +40,14 @@ export const Landing = () => {
                             <UpperCTAArea />
                         </div>
                     </Flex>
+                    <Line />
                     <Flex align="flex-start" justify="flex-start">
                         <div>
                             <LowerTextArea />
                             <LowerCTAArea />
                             <Line />
                         </div>
+                        <VerticalLine />
                         <MovingImage img={IMG_SRC.lower} border={[0, 0, 0, 6.25]} />
                     </Flex>
                     <Flex direction="column">

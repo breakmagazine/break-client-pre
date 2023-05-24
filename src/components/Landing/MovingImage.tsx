@@ -40,7 +40,8 @@ const Wrapper = styled.div<{
 
     background-color: #000;
 
-    border: 0.076vw solid #000;
+    border-right: 0.076vw solid #000;
+
     .image {
         ${({ border }) => css`
             border-radius: ${typeof border === 'number'
