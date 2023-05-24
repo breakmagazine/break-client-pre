@@ -3,8 +3,12 @@ import emotionReset from 'emotion-reset';
 
 export const globalStyle = css`
     ${emotionReset}
+    html {
+        height: 100%;
+    }
     body {
         font-family: 'Helvetica';
+        height: 100%;
     }
     button {
         background: inherit;
