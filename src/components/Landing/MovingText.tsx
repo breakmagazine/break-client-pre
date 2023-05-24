@@ -50,7 +50,7 @@ const Wrapper = styled.div<{ direction: MovingDirection }>`
     }
 
     @keyframes rightLoop {
-        1000% {
+        100% {
             -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
         }

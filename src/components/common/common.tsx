@@ -30,6 +30,11 @@ export const Line = styled.div`
     border-bottom: 0.076vw solid #000;
 `;
 
+export const VerticalLine = styled.div`
+    height: 100%;
+    border-left: 0.076vw solid #000;
+`;
+
 export const Text = styled.p<{
     typo: KeyOfTypo;
 }>`
