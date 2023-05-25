@@ -1,5 +1,6 @@
 import Logo from '../../assets/svg/break-logo.svg';
 import MenuButton from '../../assets/svg/menubar-button.svg';
+import MenuButtonHover from '../../assets/svg/menubar-button-hover.svg';
 import LowerMenuButton from '../../assets/svg/menubar-button-lower.svg';
 import styled from '@emotion/styled';
 import { Flex, Line, Space, VerticalLine } from '../common/common';
@@ -9,6 +10,9 @@ import { UpperCTAArea } from './UpperCTAArea';
 import { LowerTextArea } from './LowerTextArea';
 import { LowerCTAArea } from './LowerCTAArea';
 import { MovingText } from './MovingText';
+import { useState } from 'react';
+import { Menubar } from './Menubar';
+import { useRouter } from 'next/router';
 
 const IMG_SRC = {
     upper: ['/images/upper1.png', '/images/upper2.png', '/images/upper3.png', '/images/upper4.png'],
@@ -16,8 +20,12 @@ const IMG_SRC = {
 };
 
 export const Landing = () => {
+    const [menubarShow, setMenubarShow] = useState(false);
+    const router = useRouter();
+
     return (
         <Wrapper>
+            <Line />
             <Flex align="flex-start" justify="flex-start">
                 <Flex className="item item1" direction="column" align="flex-start" justify="space-between">
                     <Flex align="flex-start">
@@ -29,7 +37,13 @@ export const Landing = () => {
                     <Flex align="flex-start" justify="space-between">
                         <div className="item item2">2023</div>
                         <div className="item item3">
-                            <MenuButton className="item menu-button" />
+                            <StyledMenuButton>
+                                <MenuButton className="item menu-button" />
+                                <MenuButtonHover
+                                    className="item menu-button-hover"
+                                    onClick={() => setMenubarShow(true)}
+                                />
+                            </StyledMenuButton>
                         </div>
                     </Flex>
                     <Line />
@@ -37,14 +51,14 @@ export const Landing = () => {
                         <MovingImage img={IMG_SRC.upper} border={[6.25, 0, 0, 0]} />
                         <div>
                             <UpperTextArea />
-                            <UpperCTAArea />
+                            <UpperCTAArea handleButtonClick={() => router.push('/bulgogidisco')} />
                         </div>
                     </Flex>
                     <Line />
                     <Flex align="flex-start" justify="flex-start">
                         <div>
                             <LowerTextArea />
-                            <LowerCTAArea />
+                            <LowerCTAArea handleButtonClick={() => router.push('/article')} />
                         </div>
                         <VerticalLine />
                         <MovingImage img={IMG_SRC.lower} border={[0, 0, 0, 6.25]} />
@@ -58,6 +72,9 @@ export const Landing = () => {
                     </Flex>
                 </div>
             </Flex>
+            <Space height={3} />
+            <Line />
+            {menubarShow && <Menubar menubarShow={menubarShow} setMenubarShow={setMenubarShow} />}
         </Wrapper>
     );
 };
@@ -107,58 +124,44 @@ const Wrapper = styled.div`
     .item3 {
         width: 73.49vw;
         height: 8.95vw;
+    }
+`;
 
+const StyledMenuButton = styled.button`
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 6.59vw;
+    height: 5.13vw;
+
+    cursor: pointer;
+
+    .menu-button {
+        opacity: 1;
+    }
+
+    .menu-button-hover {
+        opacity: 0;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        z-index: 1;
+    }
+
+    :hover {
         .menu-button {
-            position: absolute;
-            top: 0;
-            right: 0;
-
-            width: 6.59vw;
-            height: 5.13vw;
-
-            cursor: pointer;
+            opacity: 0;
         }
-    }
 
-    /* .item4 {
-        width: 40.08vw;
-        height: 55.13vw;
-        background-color: gray;
-    } */
-
-    .item5 {
-        grid-row: 2 / 3;
-        grid-column: 3 / 4;
-        background-color: blue;
-    }
-
-    .item6 {
-        grid-row: 3 / 4;
-        grid-column: 3 / 4;
-        background-color: navy;
-    }
-
-    .item7 {
-        grid-row: 4 / 5;
-        grid-column: 2 / 3;
-        background-color: purple;
-    }
-
-    .item8 {
-        grid-row: 5 / 6;
-        grid-column: 2 / 3;
-        background-color: pink;
-    }
-
-    .item9 {
-        grid-row: 4 / 6;
-        grid-column: 3 / 4;
-        background-color: skyblue;
-    }
-
-    .item10 {
-        grid-row: 4 / 6;
-        grid-column: 3 / 4;
-        background-color: skyblue;
+        .menu-button-hover {
+            opacity: 1;
+        }
     }
 `;

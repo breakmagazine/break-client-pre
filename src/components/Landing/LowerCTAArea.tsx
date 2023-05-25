@@ -3,11 +3,11 @@ import Percentage from '../../assets/svg/percent.svg';
 import { Flex } from '../common/common';
 import { CTAButton } from './CTAButton';
 
-export const LowerCTAArea = () => {
+export const LowerCTAArea = ({ handleButtonClick }: { handleButtonClick: () => Promise<boolean> }) => {
     return (
         <Wrapper gap={2.56} align="center" justify="flex-start">
             <Percentage className="percentage" />
-            <CTAButton />
+            <CTAButton onClick={handleButtonClick} />
         </Wrapper>
     );
 };
