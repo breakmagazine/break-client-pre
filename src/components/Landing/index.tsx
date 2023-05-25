@@ -18,6 +18,7 @@ const IMG_SRC = {
 export const Landing = () => {
     return (
         <Wrapper>
+            <Line />
             <Flex align="flex-start" justify="flex-start">
                 <Flex className="item item1" direction="column" align="flex-start" justify="space-between">
                     <Flex align="flex-start">
@@ -58,6 +59,8 @@ export const Landing = () => {
                     </Flex>
                 </div>
             </Flex>
+            <Space height={3} />
+            <Line />
         </Wrapper>
     );
 };
