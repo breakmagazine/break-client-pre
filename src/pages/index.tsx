@@ -7,6 +7,7 @@ export default function Home() {
     useEffect(() => {
         setShouldShow(true); // 클라이언트 측에서 렌더링되는 시점에 요소를 보이도록 설정
     }, []);
+
     return (
         <>
             {shouldShow && (
