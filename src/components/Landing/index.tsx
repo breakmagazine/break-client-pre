@@ -12,6 +12,7 @@ import { LowerCTAArea } from './LowerCTAArea';
 import { MovingText } from './MovingText';
 import { useState } from 'react';
 import { Menubar } from './Menubar';
+import { useRouter } from 'next/router';
 
 const IMG_SRC = {
     upper: ['/images/upper1.png', '/images/upper2.png', '/images/upper3.png', '/images/upper4.png'],
@@ -20,6 +21,7 @@ const IMG_SRC = {
 
 export const Landing = () => {
     const [menubarShow, setMenubarShow] = useState(false);
+    const router = useRouter();
 
     return (
         <Wrapper>
@@ -49,14 +51,14 @@ export const Landing = () => {
                         <MovingImage img={IMG_SRC.upper} border={[6.25, 0, 0, 0]} />
                         <div>
                             <UpperTextArea />
-                            <UpperCTAArea />
+                            <UpperCTAArea handleButtonClick={() => router.push('/bulgogidisco')} />
                         </div>
                     </Flex>
                     <Line />
                     <Flex align="flex-start" justify="flex-start">
                         <div>
                             <LowerTextArea />
-                            <LowerCTAArea />
+                            <LowerCTAArea handleButtonClick={() => router.push('/article')} />
                         </div>
                         <VerticalLine />
                         <MovingImage img={IMG_SRC.lower} border={[0, 0, 0, 6.25]} />

@@ -3,11 +3,11 @@ import Asterisk from '../../assets/svg/asterisk.svg';
 import { Flex, Line } from '../common/common';
 import { CTAButton } from './CTAButton';
 
-export const UpperCTAArea = () => {
+export const UpperCTAArea = ({ handleButtonClick }: { handleButtonClick: () => Promise<boolean> }) => {
     return (
         <Wrapper gap={14.79} align="center">
             <Asterisk className="asterisk" />
-            <CTAButton />
+            <CTAButton onClick={handleButtonClick} />
         </Wrapper>
     );
 };
