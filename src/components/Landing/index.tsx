@@ -28,7 +28,8 @@ export const Landing = () => {
             <Line />
             <Flex align="flex-start" justify="flex-start">
                 <Flex className="item item1" direction="column" align="flex-start" justify="space-between">
-                    <Flex align="flex-start">
+                    <Flex justify="flex-start" align="center" direction="column">
+                        <Space height={2.98} />
                         <Logo className="item logo" />
                     </Flex>
                     <LowerMenuButton className="item menu-button-lower" />
@@ -72,7 +73,6 @@ export const Landing = () => {
                     </Flex>
                 </div>
             </Flex>
-            <Space height={3} />
             <Line />
             {menubarShow && <Menubar menubarShow={menubarShow} setMenubarShow={setMenubarShow} />}
         </Wrapper>
@@ -81,7 +81,7 @@ export const Landing = () => {
 
 const Wrapper = styled.div`
     width: 100vw;
-    height: 162vw;
+    height: 162.083333vw;
 
     box-sizing: border-box;
 
@@ -89,8 +89,7 @@ const Wrapper = styled.div`
 
     .item1 {
         width: 10.06vw;
-        height: 100%;
-        padding-top: 2.98vw;
+        height: 162.083333vw;
 
         border-right: 0.076vw solid #000;
 
@@ -140,6 +139,7 @@ const StyledMenuButton = styled.button`
     height: 5.13vw;
 
     cursor: pointer;
+    opacity: 1;
 
     .menu-button {
         opacity: 1;

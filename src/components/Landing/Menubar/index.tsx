@@ -5,7 +5,7 @@ import { theme } from '@break/styles/theme/theme';
 import Image from 'next/image';
 import Year from '../../../assets/svg/c2023.svg';
 import { RowImage } from './RowImage';
-import { Flex, Space, Text, VerticalLine } from '@break/components/common/common';
+import { Flex, Line, Space, Text, VerticalLine } from '@break/components/common/common';
 
 export interface MenubarProps {
     // handleCancelButtonClick?: MouseEventHandler<HTMLButtonElement>;
@@ -58,6 +58,7 @@ export const Menubar = (props: MenubarProps) => {
                 <Year className="year" />
             </MenubarWrapper>
             <BackDrop src="" alt="" onClick={() => props.setMenubarShow(false)} />
+            {/* <Line /> */}
         </>
     );
 };
@@ -88,7 +89,7 @@ const MenubarContent = styled.div`
 
     background-color: #fff;
 
-    position: fixed;
+    position: absolute;
     top: 0;
 
     border: 0.076vw solid #000;
@@ -122,7 +123,7 @@ const MenubarWrapper = styled.div`
     width: 100%;
     height: 51.319vw;
 
-    position: fixed;
+    position: absolute;
     top: 0;
 
     background-color: #fff;
@@ -159,10 +160,10 @@ const MenubarWrapper = styled.div`
 const BackDrop = styled(Image)`
     z-index: 15000;
 
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 162.083333vw;
 
-    position: fixed;
+    position: absolute;
 
     top: 50%;
     left: 50%;
@@ -171,6 +172,8 @@ const BackDrop = styled(Image)`
     background-color: rgba(14, 14, 14, 0.5);
 
     cursor: pointer;
+
+    box-sizing: border-box;
 `;
 
 const Img = styled.img`
