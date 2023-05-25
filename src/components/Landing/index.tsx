@@ -1,5 +1,6 @@
 import Logo from '../../assets/svg/break-logo.svg';
 import MenuButton from '../../assets/svg/menubar-button.svg';
+import MenuButtonHover from '../../assets/svg/menubar-button-hover.svg';
 import LowerMenuButton from '../../assets/svg/menubar-button-lower.svg';
 import styled from '@emotion/styled';
 import { Flex, Line, Space, VerticalLine } from '../common/common';
@@ -34,7 +35,13 @@ export const Landing = () => {
                     <Flex align="flex-start" justify="space-between">
                         <div className="item item2">2023</div>
                         <div className="item item3">
-                            <MenuButton className="item menu-button" onClick={() => setMenubarShow(true)} />
+                            <StyledMenuButton>
+                                <MenuButton className="item menu-button" />
+                                <MenuButtonHover
+                                    className="item menu-button-hover"
+                                    onClick={() => setMenubarShow(true)}
+                                />
+                            </StyledMenuButton>
                         </div>
                     </Flex>
                     <Line />
@@ -115,16 +122,44 @@ const Wrapper = styled.div`
     .item3 {
         width: 73.49vw;
         height: 8.95vw;
+    }
+`;
 
+const StyledMenuButton = styled.button`
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 6.59vw;
+    height: 5.13vw;
+
+    cursor: pointer;
+
+    .menu-button {
+        opacity: 1;
+    }
+
+    .menu-button-hover {
+        opacity: 0;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        z-index: 1;
+    }
+
+    :hover {
         .menu-button {
-            position: absolute;
-            top: 0;
-            right: 0;
+            opacity: 0;
+        }
 
-            width: 6.59vw;
-            height: 5.13vw;
-
-            cursor: pointer;
+        .menu-button-hover {
+            opacity: 1;
         }
     }
 `;
