@@ -39,7 +39,7 @@ export const Landing = () => {
                         <div className="item item2">2023</div>
                         <div className="item item3">
                             <StyledMenuButton>
-                                <MenuButton className="item menu-button" />
+                                <MenuButton className="item menu-button" onClick={() => setMenubarShow(true)} />
                                 <MenuButtonHover
                                     className="item menu-button-hover"
                                     onClick={() => setMenubarShow(true)}

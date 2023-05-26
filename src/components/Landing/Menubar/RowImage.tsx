@@ -1,13 +1,13 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Flex } from '@break/components/common/common';
 import styled from '@emotion/styled';
 import Image from 'next/image';
-import Link from 'next/link';
 
-export const RowImage = () => {
+export const RowImage = ({ img }: { img: string[] }) => {
     return (
         <StyledFlex gap={1.59} align="flex-start" justify="flex-start">
-            <Img src="" alt="" />
-            <Img src="" alt="" />
+            <Img src={img[0]} alt="" width={285} height={428} />
+            <Img src={img[1]} alt="" width={285} height={428} />
         </StyledFlex>
     );
 };
