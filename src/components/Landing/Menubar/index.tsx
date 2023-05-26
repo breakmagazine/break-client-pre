@@ -1,11 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Dispatch, MouseEventHandler, SetStateAction, useEffect } from 'react';
+import { Dispatch, MouseEventHandler, SetStateAction, useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import { theme } from '@break/styles/theme/theme';
 import Image from 'next/image';
 import Year from '../../../assets/svg/c2023.svg';
 import { RowImage } from './RowImage';
 import { Flex, Line, Space, Text, VerticalLine } from '@break/components/common/common';
+import Bulgogidisco from '../../../pages/bulgogidisco/index';
+import { useRouter } from 'next/router';
 
 export interface MenubarProps {
     // handleCancelButtonClick?: MouseEventHandler<HTMLButtonElement>;
@@ -20,35 +22,92 @@ export interface MenubarProps {
  * @param handleUploadButtonClick?: MouseEventHandler<HTMLButtonElement>
  */
 
-export const Menubar = (props: MenubarProps) => {
-    useEffect(() => {
-        // mount
+const IMG_SRC = {
+    article: ['/images/article1.png', '/images/article2.png', '/images/article3.png', '/images/article4.png'],
+    bulgogidisco: [
+        '/images/bulgogidisco1.png',
+        '/images/bulgogidisco2.png',
+        '/images/bulgogidisco3.png',
+        '/images/bulgogidisco4.png',
+    ],
+};
 
-        return () => {
-            // unmount
-            // props.setMenubarShow(false);
-        };
-    }, []);
+export const Menubar = (props: MenubarProps) => {
+    const [currentImage, setCurrentImage] = useState([IMG_SRC.article[0], IMG_SRC.article[1]]);
+    const router = useRouter();
+
+    const handleArticleHover = () => {
+        const randomIndex1 = Math.floor(Math.random() * IMG_SRC.article.length);
+        const randomIndex2 = Math.floor(Math.random() * IMG_SRC.article.length);
+
+        setCurrentImage([IMG_SRC.article[randomIndex1], IMG_SRC.article[randomIndex2]]);
+    };
+    const handleBulgogidiscoHover = () => {
+        const randomIndex1 = Math.floor(Math.random() * IMG_SRC.bulgogidisco.length);
+        const randomIndex2 = Math.floor(Math.random() * IMG_SRC.bulgogidisco.length);
+
+        setCurrentImage([IMG_SRC.bulgogidisco[randomIndex1], IMG_SRC.bulgogidisco[randomIndex2]]);
+    };
 
     return (
         <>
             <MenubarContent>
-                <RowImage />
+                <RowImage img={currentImage} />
                 <Title direction="column" align="flex-start" justify="flex-start">
                     <Space height={3.95} />
-                    <Text typo="Category">Article</Text>
+                    <Text
+                        className="article"
+                        typo="Category"
+                        onClick={() => router.push('/article')}
+                        onMouseOver={() => handleArticleHover()}
+                    >
+                        Article
+                    </Text>
                     <Space height={8.33} />
-                    <Text typo="Category">BULGOGIDISCO</Text>
+                    <Text
+                        className="bulgogidisco"
+                        typo="Category"
+                        onClick={() => router.push('/bulgogidisco')}
+                        onMouseOver={() => handleBulgogidiscoHover()}
+                    >
+                        BULGOGIDISCO
+                    </Text>
                 </Title>
                 <Content direction="column" align="flex-start" justify="flex-start">
                     <Space height={3.95} />
-                    <Text typo="Title2">CHAPTER 2</Text>
+                    <Text
+                        className="article"
+                        typo="Title2"
+                        onClick={() => router.push('/article')}
+                        onMouseOver={() => handleArticleHover()}
+                    >
+                        CHAPTER 2
+                    </Text>
                     <Space height={0.486} />
-                    <Text typo="Body2">지극히 사적인 순간</Text>
+                    <Text
+                        className="article"
+                        typo="Body2"
+                        onClick={() => router.push('/article')}
+                        onMouseOver={() => handleArticleHover()}
+                    >
+                        지극히 사적인 순간
+                    </Text>
                     <Space height={5.41} />
-                    <Text typo="Title2">火合</Text>
+                    <Text
+                        className="bulgogidisco"
+                        typo="Title2"
+                        onClick={() => router.push('/bulgogidisco')}
+                        onMouseOver={() => handleBulgogidiscoHover()}
+                    >
+                        火合
+                    </Text>
                     <Space height={0.486} />
-                    <Text typo="Body2">
+                    <Text
+                        className="bulgogidisco"
+                        typo="Body2"
+                        onClick={() => router.push('/bulgogidisco')}
+                        onMouseOver={() => handleBulgogidiscoHover()}
+                    >
                         계속 뭉그적거리고만 있을 수는 없잖아. 불살라 버리는 거야. 모두 함께 춤을 추자!
                         <br /> 경계선을 허무는 록 밴드 불고기디스코와 뜨겁게 화합(火合)하다.
                     </Text>
@@ -109,6 +168,14 @@ const MenubarContent = styled.div`
             transform: translateY(0);
             opacity: 1;
         }
+    }
+
+    .article {
+        cursor: pointer;
+    }
+
+    .bulgogidisco {
+        cursor: pointer;
     }
 `;
 
