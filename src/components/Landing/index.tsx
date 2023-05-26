@@ -139,10 +139,15 @@ const StyledMenuButton = styled.button`
     height: 5.13vw;
 
     cursor: pointer;
-    opacity: 1;
 
     .menu-button {
         opacity: 1;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        z-index: 1;
     }
 
     .menu-button-hover {
@@ -152,7 +157,7 @@ const StyledMenuButton = styled.button`
         top: 0;
         right: 0;
 
-        z-index: 1;
+        z-index: 0;
     }
 
     :hover {
