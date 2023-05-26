@@ -15,8 +15,18 @@ import { Menubar } from './Menubar';
 import { useRouter } from 'next/router';
 
 const IMG_SRC = {
-    upper: ['/images/upper1.png', '/images/upper2.png', '/images/upper3.png', '/images/upper4.png'],
-    lower: ['/images/lower1.png', '/images/lower2.png', '/images/lower3.png', '/images/lower4.png'],
+    upper: [
+        'https://github.com/breakmagazine/break-client/assets/103591752/92886c89-58a2-4687-8b30-34f2901d7d44',
+        'https://github.com/breakmagazine/break-client/assets/103591752/5800c213-2714-4942-afc1-728f15d5f39b',
+        'https://github.com/breakmagazine/break-client/assets/103591752/3bd5e1ea-4685-4678-8b71-1a3a4c1487b1',
+        'https://github.com/breakmagazine/break-client/assets/103591752/97000352-5195-4d08-8806-f351844e5af9',
+    ],
+    lower: [
+        'https://github.com/breakmagazine/break-client/assets/103591752/8bb6cc40-2844-4c6a-b2f2-a2874fa0632c',
+        'https://github.com/breakmagazine/break-client/assets/103591752/c350363c-b698-4862-b897-4ff2a47b5125',
+        'https://github.com/breakmagazine/break-client/assets/103591752/6910201f-149b-43dd-9d67-9e3caa6256cd',
+        'https://github.com/breakmagazine/break-client/assets/103591752/c7531440-958e-45bd-bf7c-f7abe0ae0f34',
+    ],
 };
 
 export const Landing = () => {

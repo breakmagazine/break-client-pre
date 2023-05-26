@@ -23,12 +23,17 @@ export interface MenubarProps {
  */
 
 const IMG_SRC = {
-    article: ['/images/article1.png', '/images/article2.png', '/images/article3.png', '/images/article4.png'],
+    article: [
+        'https://github.com/breakmagazine/break-client/assets/103591752/3bee40d0-4916-49a9-a46c-116a49cde929',
+        'https://github.com/breakmagazine/break-client/assets/103591752/56332e25-fa2d-4dd2-8423-a94d28837ff4',
+        'https://github.com/breakmagazine/break-client/assets/103591752/e7ae069c-d0f2-4146-8b42-b1006d56f199',
+        'https://github.com/breakmagazine/break-client/assets/103591752/6e0fb435-529f-43ff-95fc-dea862595c69',
+    ],
     bulgogidisco: [
-        '/images/bulgogidisco1.png',
-        '/images/bulgogidisco2.png',
-        '/images/bulgogidisco3.png',
-        '/images/bulgogidisco4.png',
+        'https://github.com/breakmagazine/break-client/assets/103591752/95ffae77-fd0a-4fff-b11c-8ea1b2c6221c',
+        'https://github.com/breakmagazine/break-client/assets/103591752/8bab7155-5bf7-4092-8d46-4736adb0c7d3',
+        'https://github.com/breakmagazine/break-client/assets/103591752/161a8fc4-70c2-4d8f-8b26-cf50da3427f9',
+        'https://github.com/breakmagazine/break-client/assets/103591752/5fbe8439-add7-419a-bc6d-6df42d6a9bb2',
     ],
 };
 
@@ -117,7 +122,6 @@ export const Menubar = (props: MenubarProps) => {
                 <Year className="year" />
             </MenubarWrapper>
             <BackDrop src="" alt="" onClick={() => props.setMenubarShow(false)} />
-            {/* <Line /> */}
         </>
     );
 };
