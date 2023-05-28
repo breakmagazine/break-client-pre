@@ -5,13 +5,20 @@ interface InfoTextSetProps {
     description: string[];
     color?: string;
     align?: alignType;
+    className?: string;
 }
 
 type alignType = 'flex-start' | 'flex-end';
 
-export const InfoTextSet = ({ title, description, color = '#000', align = 'flex-start' }: InfoTextSetProps) => {
+export const InfoTextSet = ({
+    title,
+    description,
+    color = '#000',
+    align = 'flex-start',
+    className = '',
+}: InfoTextSetProps) => {
     return (
-        <Flex direction="column" gap={1.04} align={align} justify="flex-start">
+        <Flex className={className} direction="column" gap={1.04} align={align} justify="flex-start">
             <Text typo="ClothTitle" color={color}>
                 {title}
             </Text>

@@ -2,7 +2,7 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
 import { Flex, Space, Text } from '../common/common';
-import { typo } from '../../styles/theme/typo';
+import { InfoTextSet } from './InfoTextSet';
 
 export const ArticlePage = () => {
     const IMG_SRC = [
@@ -29,16 +29,41 @@ export const ArticlePage = () => {
         'Web Developer 강나연 (@nyhibi) 장영준 (@youngjangjoon)',
     ];
 
-    return (
-        <Wrapper direction="column" align="flex-start" justify="center">
-            <Image priority className="img0" alt="" width={1439} height={1797} src={IMG_SRC[0]} />
+    const INFO_TEXT = {
+        look1: {
+            title: 'LOOK1',
+            description: [
+                'Top 에디터 개인 소장품',
+                'Shoes 에디터 개인 소장품',
+                'Acc ROCKING DOCKING PICKING @rockingdockingpicking',
+                'Outer, Bottom 모두 0426x @0426x',
+            ],
+        },
+        look2: {
+            title: 'LOOK2',
+            description: ['Top toritoritoritori @toritoritoritori__', 'Bottom Helmut Lang', 'Acc ae'],
+        },
+        look3: {
+            title: 'LOOK3',
+            description: ['Top sulvam', 'Bottom Per Gotesson', 'Shoes Salomon', 'Acc Our Legacy, ae'],
+        },
+    };
 
+    return (
+        <Wrapper direction="column" align="center" justify="flex-start">
+            <ImageWrapper1>
+                <Image priority className="img0" alt="" width={1439} height={1797} src={IMG_SRC[0]} />
+                <InfoTextSet className="text" title={INFO_TEXT.look1.title} description={INFO_TEXT.look1.description} />
+            </ImageWrapper1>
             <WhiteWrapper direction="column" align="center" justify="flex-start">
                 <Space height={11.11} />
                 <Image priority className="img1" alt="" width={1103} height={735} src={IMG_SRC[1]} />
             </WhiteWrapper>
             <Space height={106.25} />
+
             <Image priority className="img2" alt="" width={1232} height={1847} src={IMG_SRC[2]} />
+            <InfoTextSet className="text2" title={INFO_TEXT.look1.title} description={INFO_TEXT.look1.description} />
+
             <Space height={36.805} />
             <section>
                 <Image priority className="img3" alt="" width={1314} height={1917} src={IMG_SRC[3]} />
@@ -86,8 +111,8 @@ const Wrapper = styled(Flex)`
     overflow: hidden;
 
     .img0 {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: auto;
     }
 
     .img2 {
@@ -175,10 +200,13 @@ const WhiteWrapper = styled(Flex)`
     }
 `;
 
-const StyledText = styled(Text)`
-    opacity: 0.6;
-    color: #fff;
+const ImageWrapper1 = styled.div`
+    position: relative;
+    height: 124.79vw;
 
-    display: flex;
-    justify-content: center;
+    .text {
+        position: absolute;
+        left: 2.76vw;
+        bottom: 24px;
+    }
 `;

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import Asterisk from '../../assets/svg/asterisk.svg';
-import { Flex, Line } from '../common/common';
+import { Flex } from '../common/common';
 import { CTAButton } from './CTAButton';
 
 export const UpperCTAArea = ({ handleButtonClick }: { handleButtonClick: () => Promise<boolean> }) => {

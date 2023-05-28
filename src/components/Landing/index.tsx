@@ -37,12 +37,11 @@ export const Landing = () => {
         <Wrapper>
             <Line />
             <Flex align="flex-start" justify="flex-start">
-                <Flex className="item item1" direction="column" align="flex-start" justify="space-between">
-                    <Flex justify="flex-start" align="center" direction="column">
-                        <Space height={2.98} />
-                        <Logo className="item logo" />
+                <Flex className="item item1" direction="column" align="center" justify="space-between">
+                    <Logo className="item logo" />
+                    <Flex className="item item1" direction="column" align="flex-start" justify="flex-end">
+                        <LowerMenuButton className="item menu-button-lower" />
                     </Flex>
-                    <LowerMenuButton className="item menu-button-lower" />
                 </Flex>
                 <div>
                     <Flex align="flex-start" justify="space-between">
@@ -106,6 +105,8 @@ const Wrapper = styled.div`
         .logo {
             width: 5.13vw;
             height: 19.44vw;
+
+            margin-top: 2.98vw;
         }
 
         .menu-button-lower {
