@@ -16,14 +16,14 @@ import { useRouter } from 'next/router';
 
 const IMG_SRC = {
     upper: [
-        'https://github.com/breakmagazine/break-client/assets/103591752/92886c89-58a2-4687-8b30-34f2901d7d44',
-        'https://github.com/breakmagazine/break-client/assets/103591752/5800c213-2714-4942-afc1-728f15d5f39b',
-        'https://github.com/breakmagazine/break-client/assets/103591752/3bd5e1ea-4685-4678-8b71-1a3a4c1487b1',
-        'https://github.com/breakmagazine/break-client/assets/103591752/97000352-5195-4d08-8806-f351844e5af9',
+        'https://github.com/breakmagazine/break-client/assets/103591752/20b7e210-f969-4a77-8af4-d0212faaabbe',
+        'https://github.com/breakmagazine/break-client/assets/103591752/8477be56-0e14-48bb-bf63-0c64e3b75479',
+        'https://github.com/breakmagazine/break-client/assets/103591752/2a031bfc-0da9-43dd-bcc0-359ff2e0b255',
+        'https://github.com/breakmagazine/break-client/assets/103591752/296b0751-87de-4b73-8ef3-ed31161e8b07',
     ],
     lower: [
-        'https://github.com/breakmagazine/break-client/assets/103591752/8bb6cc40-2844-4c6a-b2f2-a2874fa0632c',
-        'https://github.com/breakmagazine/break-client/assets/103591752/c350363c-b698-4862-b897-4ff2a47b5125',
+        'https://github.com/breakmagazine/break-client/assets/103591752/a71a820a-9f8b-4832-8bc1-68eb856fbc0c',
+        'https://github.com/breakmagazine/break-client/assets/103591752/f0ecd28d-0555-49c4-976f-6daf555545b7',
         'https://github.com/breakmagazine/break-client/assets/103591752/6910201f-149b-43dd-9d67-9e3caa6256cd',
         'https://github.com/breakmagazine/break-client/assets/103591752/c7531440-958e-45bd-bf7c-f7abe0ae0f34',
     ],

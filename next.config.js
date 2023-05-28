@@ -13,7 +13,7 @@ const nextConfig = {
     },
 
     images: {
-        domains: ['github.com'],
+        domains: ['github.com', 'res.cloudinary.com', 'file.notion.so'],
     },
 };
 

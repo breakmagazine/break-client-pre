@@ -181,6 +181,8 @@ const MenubarContent = styled.div`
     .bulgogidisco {
         cursor: pointer;
     }
+
+    box-shadow: ${theme.shadow.Large};
 `;
 
 const MenubarWrapper = styled.div`
@@ -226,6 +228,8 @@ const MenubarWrapper = styled.div`
             opacity: 1;
         }
     }
+
+    box-shadow: ${theme.shadow.Large};
 `;
 
 const BackDrop = styled(Image)`

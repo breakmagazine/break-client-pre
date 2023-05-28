@@ -35,7 +35,7 @@ export const MovingImage = ({ img, border, ...props }: MovingImageProps) => {
 
     return (
         <Wrapper border={border}>
-            <Image className="image" loading="lazy" src={currentImage} alt="" width={718} height={912} />
+            <Image className="image" src={currentImage} alt="" width={718} height={912} priority />
         </Wrapper>
     );
 };

@@ -37,9 +37,10 @@ export const VerticalLine = styled.div`
 
 export const Text = styled.p<{
     typo: KeyOfTypo;
+    color?: string;
 }>`
     ${({ typo }) => theme.typo[typo]};
-    color: #000;
+    color: ${({ color }) => (color ? color : '#000')};
 
     display: flex;
     align-items: center;
