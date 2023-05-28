@@ -24,8 +24,9 @@ const StyledButton = styled.button`
     justify-content: center;
 
     .item {
-        width: 17.8vw;
-        height: 8vw;
+        width: 17.2vw;
+        height: auto;
+        overflow: visible;
     }
 
     .cta-hover {

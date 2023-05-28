@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Landing } from '../components/Landing/index';
+import { Landing } from '@break/components/Landing';
 import styled from '@emotion/styled';
 export default function Home() {
     const [shouldShow, setShouldShow] = useState(false);
