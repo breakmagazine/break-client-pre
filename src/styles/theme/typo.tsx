@@ -69,6 +69,12 @@ export const typo = {
         font-size: ${calcVw(24)};
         line-height: 160%;
     `,
+    ClothTitle: css`
+        font-family: 'Pretendard';
+        font-weight: 500;
+        font-size: ${calcVw(20)};
+        line-height: 140%;
+    `,
     ClothInfo: css`
         font-family: 'Pretendard';
         font-weight: 300;
