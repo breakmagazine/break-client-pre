@@ -15,8 +15,18 @@ import { Menubar } from './Menubar';
 import { useRouter } from 'next/router';
 
 const IMG_SRC = {
-    upper: ['/images/upper1.png', '/images/upper2.png', '/images/upper3.png', '/images/upper4.png'],
-    lower: ['/images/lower1.png', '/images/lower2.png', '/images/lower3.png', '/images/lower4.png'],
+    upper: [
+        'https://github.com/breakmagazine/break-client/assets/103591752/20b7e210-f969-4a77-8af4-d0212faaabbe',
+        'https://github.com/breakmagazine/break-client/assets/103591752/8477be56-0e14-48bb-bf63-0c64e3b75479',
+        'https://github.com/breakmagazine/break-client/assets/103591752/2a031bfc-0da9-43dd-bcc0-359ff2e0b255',
+        'https://github.com/breakmagazine/break-client/assets/103591752/296b0751-87de-4b73-8ef3-ed31161e8b07',
+    ],
+    lower: [
+        'https://github.com/breakmagazine/break-client/assets/103591752/a71a820a-9f8b-4832-8bc1-68eb856fbc0c',
+        'https://github.com/breakmagazine/break-client/assets/103591752/f0ecd28d-0555-49c4-976f-6daf555545b7',
+        'https://github.com/breakmagazine/break-client/assets/103591752/6910201f-149b-43dd-9d67-9e3caa6256cd',
+        'https://github.com/breakmagazine/break-client/assets/103591752/c7531440-958e-45bd-bf7c-f7abe0ae0f34',
+    ],
 };
 
 export const Landing = () => {
@@ -27,12 +37,11 @@ export const Landing = () => {
         <Wrapper>
             <Line />
             <Flex align="flex-start" justify="flex-start">
-                <Flex className="item item1" direction="column" align="flex-start" justify="space-between">
-                    <Flex justify="flex-start" align="center" direction="column">
-                        <Space height={2.98} />
-                        <Logo className="item logo" />
+                <Flex className="item item1" direction="column" align="center" justify="space-between">
+                    <Logo className="item logo" />
+                    <Flex className="item item1" direction="column" align="flex-start" justify="flex-end">
+                        <LowerMenuButton className="item menu-button-lower" />
                     </Flex>
-                    <LowerMenuButton className="item menu-button-lower" />
                 </Flex>
                 <div>
                     <Flex align="flex-start" justify="space-between">
@@ -96,6 +105,8 @@ const Wrapper = styled.div`
         .logo {
             width: 5.13vw;
             height: 19.44vw;
+
+            margin-top: 2.98vw;
         }
 
         .menu-button-lower {

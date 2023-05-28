@@ -1,7 +1,12 @@
 import React from 'react';
+import { ArticlePage } from '../../components/Article/index';
 
 const Article = () => {
-    return <div>dfd</div>;
+    return (
+        <div>
+            <ArticlePage />
+        </div>
+    );
 };
 
 export default Article;

@@ -11,6 +11,10 @@ const nextConfig = {
 
         return config;
     },
+
+    images: {
+        domains: ['github.com', 'res.cloudinary.com', 'file.notion.so'],
+    },
 };
 
 module.exports = nextConfig;

@@ -45,4 +45,40 @@ export const typo = {
         font-size: ${calcVw(150)};
         line-height: 81%;
     `,
+    BulgogiQuestion: css`
+        font-family: 'SUIT Variable', sans-serif, 'Apple SD Gothic Neo';
+        font-weight: 600;
+        font-size: ${calcVw(28)};
+        line-height: 161%;
+    `,
+    BulgogiAnswer: css`
+        font-family: 'SUIT Variable', sans-serif, 'Apple SD Gothic Neo';
+        font-weight: 600;
+        font-size: ${calcVw(24)};
+        line-height: 170%;
+    `,
+    BulgogiHeading: css`
+        font-family: 'SUIT Variable', sans-serif, 'Apple SD Gothic Neo';
+        font-weight: 800;
+        font-size: ${calcVw(38.163)};
+        line-height: 160%;
+    `,
+    Credit: css`
+        font-family: 'SUIT Variable', sans-serif, 'Apple SD Gothic Neo';
+        font-weight: 700;
+        font-size: ${calcVw(24)};
+        line-height: 160%;
+    `,
+    ClothTitle: css`
+        font-family: 'Pretendard';
+        font-weight: 500;
+        font-size: ${calcVw(20)};
+        line-height: 140%;
+    `,
+    ClothInfo: css`
+        font-family: 'Pretendard';
+        font-weight: 300;
+        font-size: ${calcVw(20)};
+        line-height: 140%;
+    `,
 } as const;
