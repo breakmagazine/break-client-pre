@@ -8,6 +8,11 @@ export default function Document() {
                     href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css"
                     rel="stylesheet"
                 />
+                <link
+                    rel="stylesheet"
+                    as="style"
+                    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+                />
             </Head>
             <body>
                 <Main />
