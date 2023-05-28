@@ -47,6 +47,14 @@ export const ArticlePage = () => {
             title: 'LOOK3',
             description: ['Top sulvam', 'Bottom Per Gotesson', 'Shoes Salomon', 'Acc Our Legacy, ae'],
         },
+        look4: {
+            title: 'LOOK4',
+            description: ['Top Stefan Cooke', 'Bottom Per Gotesson', 'Shoes Colorcolla @colorcolla_official', 'Acc ae'],
+        },
+        look5: {
+            title: 'LOOK5',
+            description: ['Top PAYNESTAR', 'Bottom Per Gotesson', 'Acc Our Legacy'],
+        },
     };
 
     return (
@@ -60,13 +68,29 @@ export const ArticlePage = () => {
                 <Image priority className="img1" alt="" width={1103} height={735} src={IMG_SRC[1]} />
             </WhiteWrapper>
             <Space height={106.25} />
-
-            <Image priority className="img2" alt="" width={1232} height={1847} src={IMG_SRC[2]} />
+            <div className="img2-wrapper">
+                <ImageWrapper2>
+                    <Image className="img2" priority alt="" width={1232} height={1847} src={IMG_SRC[2]} />
+                    <InfoTextSet
+                        className="text"
+                        title={INFO_TEXT.look2.title}
+                        description={INFO_TEXT.look2.description}
+                        color="#fff"
+                        align="flex-end"
+                    />
+                </ImageWrapper2>
+            </div>
             <InfoTextSet className="text2" title={INFO_TEXT.look1.title} description={INFO_TEXT.look1.description} />
 
             <Space height={36.805} />
             <section>
                 <Image priority className="img3" alt="" width={1314} height={1917} src={IMG_SRC[3]} />
+                <InfoTextSet
+                    className="text"
+                    title={INFO_TEXT.look3.title}
+                    description={INFO_TEXT.look3.description}
+                    color="#fff"
+                />
             </section>
             <Space height={136.875} />
             <section>
@@ -74,9 +98,26 @@ export const ArticlePage = () => {
             </section>
             <Space height={136.875} />
             <Space height={28.47} />
-            <Image priority className="img4" alt="" width={1444} height={1020} src={IMG_SRC[4]} />
+            <ImageWrapper3>
+                <Image priority className="img4" alt="" width={1444} height={1020} src={IMG_SRC[4]} />
+                <InfoTextSet
+                    className="text"
+                    title={INFO_TEXT.look4.title}
+                    description={INFO_TEXT.look4.description}
+                    color="#fff"
+                />
+            </ImageWrapper3>
             <Space height={27.36} />
-            <Image priority className="img5" alt="" width={1466} height={2197} src={IMG_SRC[5]} />
+            <ImageWrapper4>
+                <Image priority className="img5" alt="" width={1466} height={2197} src={IMG_SRC[5]} />
+                <InfoTextSet
+                    className="text"
+                    title={INFO_TEXT.look5.title}
+                    description={INFO_TEXT.look5.description}
+                    color="#fff"
+                    align="flex-end"
+                />
+            </ImageWrapper4>
             <section>
                 <Image priority className="img6" alt="" width={1039} height={1557} src={IMG_SRC[6]} />
             </section>
@@ -115,7 +156,7 @@ const Wrapper = styled(Flex)`
         height: auto;
     }
 
-    .img2 {
+    .img2-wrapper {
         width: 85.55vw;
         height: auto;
 
@@ -180,6 +221,10 @@ const Wrapper = styled(Flex)`
 
         width: 100%;
         height: auto;
+
+        .text {
+            margin-left: 2.76vw;
+        }
     }
 
     img {
@@ -208,5 +253,40 @@ const ImageWrapper1 = styled.div`
         position: absolute;
         left: 2.76vw;
         bottom: 24px;
+    }
+`;
+
+const ImageWrapper2 = styled.div`
+    position: relative;
+
+    .img2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text {
+        position: absolute;
+        top: 24px;
+        right: 2.76vw;
+    }
+`;
+
+const ImageWrapper3 = styled.div`
+    position: relative;
+
+    .text {
+        position: absolute;
+        top: 24px;
+        left: 2.76vw;
+    }
+`;
+
+const ImageWrapper4 = styled.div`
+    position: relative;
+
+    .text {
+        position: absolute;
+        top: 24px;
+        right: 2.76vw;
     }
 `;
