@@ -23,11 +23,15 @@ export const InfoTextSet = ({
                 {title}
             </Text>
             <Flex direction="column" align={align} justify="flex-start">
-                {description.map((el, index) => (
-                    <Text key={index} typo="ClothInfo" color={color}>
-                        {el}
-                    </Text>
-                ))}
+                {description.map((el, index) =>
+                    el === ' ' ? (
+                        <br key={index} />
+                    ) : (
+                        <Text key={index} typo="BulgogiAnswer" color={color}>
+                            {el}
+                        </Text>
+                    )
+                )}
             </Flex>
         </Flex>
     );
