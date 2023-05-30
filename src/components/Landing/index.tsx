@@ -96,6 +96,8 @@ const Wrapper = styled.div`
 
     position: relative;
 
+    overflow: hidden;
+
     .item1 {
         width: 10.06vw;
         height: 162.083333vw;
