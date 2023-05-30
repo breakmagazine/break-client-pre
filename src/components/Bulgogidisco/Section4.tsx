@@ -81,7 +81,6 @@ const Wrapper = styled(Flex)`
         position: absolute;
 
         width: 52.22vw;
-        height: 87.152vw;
 
         top: 6.52vw;
         right: 0;
@@ -89,7 +88,7 @@ const Wrapper = styled(Flex)`
         background: rgba(0, 0, 0, 0.8);
 
         box-sizing: border-box;
-        padding: 6.52vw 4.51vw 0vw 4.79vw;
+        padding: 6.52vw 4.51vw 3.6vw 4.79vw;
 
         z-index: 2;
     }
@@ -137,7 +136,7 @@ const Wrapper = styled(Flex)`
         position: absolute;
 
         width: 50.34vw;
-        height: 21.52vw;
+        /* height: 21.52vw; */
 
         top: 326.66vw;
         left: 0;
@@ -145,7 +144,7 @@ const Wrapper = styled(Flex)`
         z-index: 3;
 
         box-sizing: border-box;
-        padding: 3.61vw 0.83vw 0vw 4.51vw;
+        padding: 3.61vw 1.73vw 4.3vw 4.51vw;
 
         background-color: #fff;
     }
