@@ -41,4 +41,6 @@ export const Text = styled.p<{
 
     display: flex;
     align-items: center;
+
+    white-space: pre-wrap;
 `;

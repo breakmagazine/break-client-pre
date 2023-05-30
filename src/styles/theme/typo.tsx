@@ -63,6 +63,12 @@ export const typo = {
         font-size: ${calcVw(38.163)};
         line-height: 160%;
     `,
+    Bulgogi85: css`
+        font-family: 'SUIT Variable', sans-serif, 'Apple SD Gothic Neo';
+        font-weight: 800;
+        font-size: ${calcVw(85.85)};
+        line-height: 160%;
+    `,
     Credit: css`
         font-family: 'SUIT Variable', sans-serif, 'Apple SD Gothic Neo';
         font-weight: 700;

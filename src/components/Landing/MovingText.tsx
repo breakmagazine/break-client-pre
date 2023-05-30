@@ -8,16 +8,16 @@ export const MovingText = ({ direction }: { direction: MovingDirection }) => {
         <Wrapper direction={direction}>
             <Flex className="flow-wrap" gap={3.33}>
                 <Text className="flow-text" typo="MovingText">
-                    NEW GEN LIFE & FASHION STYLE
+                    NEW&nbsp;GEN&nbsp;LIFE&nbsp;&&nbsp;FASHION&nbsp;STYLE
                 </Text>
                 <Text className="flow-text" typo="MovingText">
-                    NEW GEN LIFE & FASHION STYLE
+                    NEW&nbsp;GEN&nbsp;LIFE&nbsp;&&nbsp;FASHION&nbsp;STYLE
                 </Text>
                 <Text className="flow-text" typo="MovingText">
-                    NEW GEN LIFE & FASHION STYLE
+                    NEW&nbsp;GEN&nbsp;LIFE&nbsp;&&nbsp;FASHION&nbsp;STYLE
                 </Text>
                 <Text className="flow-text" typo="MovingText">
-                    NEW GEN LIFE & FASHION STYLE
+                    NEW&nbsp;GEN&nbsp;LIFE&nbsp;&&nbsp;FASHION&nbsp;STYLE
                 </Text>
             </Flex>
         </Wrapper>
