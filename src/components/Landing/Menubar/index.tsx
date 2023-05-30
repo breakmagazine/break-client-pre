@@ -8,6 +8,7 @@ import { RowImage } from './RowImage';
 import { Flex, Line, Space, Text, VerticalLine } from '@break/components/common/common';
 import Bulgogidisco from '../../../pages/bulgogidisco/index';
 import { useRouter } from 'next/router';
+import MenubarLogo from '../../../assets/svg/menubar-logo.svg';
 
 export interface MenubarProps {
     // handleCancelButtonClick?: MouseEventHandler<HTMLButtonElement>;
@@ -42,16 +43,18 @@ export const Menubar = (props: MenubarProps) => {
     const router = useRouter();
 
     const handleArticleHover = () => {
-        const randomIndex1 = Math.floor(Math.random() * IMG_SRC.article.length);
-        const randomIndex2 = Math.floor(Math.random() * IMG_SRC.article.length);
+        const array = [0, 1, 2, 3];
+        const shuffledArray = array.sort(() => 0.5 - Math.random()); // 배열 섞기
+        const selectedIndices = shuffledArray.slice(0, 2); // 앞에서부터 2개 인덱스 선택
 
-        setCurrentImage([IMG_SRC.article[randomIndex1], IMG_SRC.article[randomIndex2]]);
+        setCurrentImage([IMG_SRC.article[selectedIndices[0]], IMG_SRC.article[selectedIndices[1]]]);
     };
     const handleBulgogidiscoHover = () => {
-        const randomIndex1 = Math.floor(Math.random() * IMG_SRC.bulgogidisco.length);
-        const randomIndex2 = Math.floor(Math.random() * IMG_SRC.bulgogidisco.length);
+        const array = [0, 1, 2, 3];
+        const shuffledArray = array.sort(() => 0.5 - Math.random()); // 배열 섞기
+        const selectedIndices = shuffledArray.slice(0, 2); // 앞에서부터 2개 인덱스 선택
 
-        setCurrentImage([IMG_SRC.bulgogidisco[randomIndex1], IMG_SRC.bulgogidisco[randomIndex2]]);
+        setCurrentImage([IMG_SRC.bulgogidisco[selectedIndices[0]], IMG_SRC.bulgogidisco[selectedIndices[1]]]);
     };
 
     return (
@@ -121,10 +124,39 @@ export const Menubar = (props: MenubarProps) => {
             <MenubarWrapper>
                 <Year className="year" />
             </MenubarWrapper>
-            <BackDrop src="" alt="" onClick={() => props.setMenubarShow(false)} />
+            <BackDropWrapper>
+                <BackDrop
+                    priority
+                    src="https://github.com/breakmagazine/break-client/assets/103591752/551bd1ab-bce9-42eb-82f8-a1336f72e410"
+                    alt=""
+                    width={1473}
+                    height={2209}
+                    onClick={() => props.setMenubarShow(false)}
+                />
+                <MenubarLogo className="menubar-logo" />
+            </BackDropWrapper>
         </>
     );
 };
+
+const BackDropWrapper = styled.div`
+    width: 100vw;
+    height: 100%;
+
+    overflow: hidden;
+
+    .menubar-logo {
+        position: absolute;
+
+        width: 12.84vw;
+        height: 12.84vw;
+
+        right: 5.2vw;
+        bottom: 5vw;
+
+        z-index: 150001;
+    }
+`;
 
 const Title = styled(Flex)`
     width: 14.3vw;
@@ -235,20 +267,16 @@ const MenubarWrapper = styled.div`
 const BackDrop = styled(Image)`
     z-index: 15000;
 
-    width: 100vw;
-    height: 162.083333vw;
+    width: 102.29vw;
+    height: auto;
 
     position: absolute;
+    left: -0.416vw;
+    top: 21.597vw;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    background-color: rgba(14, 14, 14, 0.5);
+    background: rgba(0, 0, 0, 0.8);
 
     cursor: pointer;
-
-    box-sizing: border-box;
 `;
 
 const Img = styled.img`
