@@ -1,5 +1,7 @@
+import { BulgogidiscoPage } from '@break/components/Bulgogidisco';
+
 const Bulgogidisco = () => {
-    return <div>hi</div>;
+    return <BulgogidiscoPage />;
 };
 
 export default Bulgogidisco;

@@ -47,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["polished", "npm:4.2.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:bd6d11ba1beffc8396390d189e964e722401276748483f11052881b73e5d966cb187baf9d6a9f10f8fa7a33e8ec5fc8a72b64d1fa50594c4d895ec6ae5d40540#npm:18.2.0"],\
+            ["react-youtube", "virtual:bd6d11ba1beffc8396390d189e964e722401276748483f11052881b73e5d966cb187baf9d6a9f10f8fa7a33e8ec5fc8a72b64d1fa50594c4d895ec6ae5d40540#npm:10.1.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
           ],\
           "linkType": "SOFT"\
@@ -3851,6 +3852,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["polished", "npm:4.2.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:bd6d11ba1beffc8396390d189e964e722401276748483f11052881b73e5d966cb187baf9d6a9f10f8fa7a33e8ec5fc8a72b64d1fa50594c4d895ec6ae5d40540#npm:18.2.0"],\
+            ["react-youtube", "virtual:bd6d11ba1beffc8396390d189e964e722401276748483f11052881b73e5d966cb187baf9d6a9f10f8fa7a33e8ec5fc8a72b64d1fa50594c4d895ec6ae5d40540#npm:10.1.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
           ],\
           "linkType": "SOFT"\
@@ -4155,6 +4157,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["debug", [\
+        ["npm:2.6.9", {\
+          "packageLocation": "./.yarn/cache/debug-npm-2.6.9-7d4cb597dc-d2f51589ca.zip/node_modules/debug/",\
+          "packageDependencies": [\
+            ["debug", "npm:2.6.9"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
         ["npm:3.2.7", {\
           "packageLocation": "./.yarn/cache/debug-npm-3.2.7-754e818c7a-b3d8c59407.zip/node_modules/debug/",\
           "packageDependencies": [\
@@ -4189,6 +4198,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:65bed195431eadffc59e2238eb20cc12d9a1665bc7458ce780a9320ff795091b03cb5c4c2094938315ddd967b5b02c0f1df67b3ed435c69b7457092b7cc06ed8#npm:3.2.7"],\
             ["@types/supports-color", null],\
             ["ms", "npm:2.1.3"],\
+            ["supports-color", null]\
+          ],\
+          "packagePeers": [\
+            "@types/supports-color",\
+            "supports-color"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:f66fa65a7d3b7c04e2875089593b072f584a774d61176560067bcbb045613b8ab746e44893db374f4b21a720d911470a2069cdd9da622ac9a2732665620f57ef#npm:2.6.9", {\
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-043cf600d4/0/cache/debug-npm-2.6.9-7d4cb597dc-d2f51589ca.zip/node_modules/debug/",\
+          "packageDependencies": [\
+            ["debug", "virtual:f66fa65a7d3b7c04e2875089593b072f584a774d61176560067bcbb045613b8ab746e44893db374f4b21a720d911470a2069cdd9da622ac9a2732665620f57ef#npm:2.6.9"],\
+            ["@types/supports-color", null],\
+            ["ms", "npm:2.0.0"],\
             ["supports-color", null]\
           ],\
           "packagePeers": [\
@@ -5987,6 +6010,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["load-script", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/load-script-npm-1.0.0-32a3163a57-8458e3f07b.zip/node_modules/load-script/",\
+          "packageDependencies": [\
+            ["load-script", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["locate-path", [\
         ["npm:6.0.0", {\
           "packageLocation": "./.yarn/cache/locate-path-npm-6.0.0-06a1e4c528-72eb661788.zip/node_modules/locate-path/",\
@@ -6134,6 +6166,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["ms", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/ms-npm-2.0.0-9e1101a471-0e6a22b8b7.zip/node_modules/ms/",\
+          "packageDependencies": [\
+            ["ms", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:2.1.2", {\
           "packageLocation": "./.yarn/cache/ms-npm-2.1.2-ec0c1512ff-673cdb2c31.zip/node_modules/ms/",\
           "packageDependencies": [\
@@ -6671,6 +6710,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-youtube", [\
+        ["npm:10.1.0", {\
+          "packageLocation": "./.yarn/cache/react-youtube-npm-10.1.0-57507894ba-514678c2a2.zip/node_modules/react-youtube/",\
+          "packageDependencies": [\
+            ["react-youtube", "npm:10.1.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:bd6d11ba1beffc8396390d189e964e722401276748483f11052881b73e5d966cb187baf9d6a9f10f8fa7a33e8ec5fc8a72b64d1fa50594c4d895ec6ae5d40540#npm:10.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-youtube-virtual-c0385255c0/0/cache/react-youtube-npm-10.1.0-57507894ba-514678c2a2.zip/node_modules/react-youtube/",\
+          "packageDependencies": [\
+            ["react-youtube", "virtual:bd6d11ba1beffc8396390d189e964e722401276748483f11052881b73e5d966cb187baf9d6a9f10f8fa7a33e8ec5fc8a72b64d1fa50594c4d895ec6ae5d40540#npm:10.1.0"],\
+            ["@types/react", "npm:18.2.6"],\
+            ["fast-deep-equal", "npm:3.1.3"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["youtube-player", "npm:5.5.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["readable-stream", [\
         ["npm:1.0.34", {\
           "packageLocation": "./.yarn/cache/readable-stream-npm-1.0.34-db63158f3f-85042c537e.zip/node_modules/readable-stream/",\
@@ -6937,6 +7001,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/signal-exit-npm-3.0.7-bd270458a3-a2f098f247.zip/node_modules/signal-exit/",\
           "packageDependencies": [\
             ["signal-exit", "npm:3.0.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["sister", [\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/cache/sister-npm-3.0.2-bdf9c0b44b-8a1eb9d20a.zip/node_modules/sister/",\
+          "packageDependencies": [\
+            ["sister", "npm:3.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7599,6 +7672,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yocto-queue-npm-0.1.0-c6c9a7db29-f77b3d8d00.zip/node_modules/yocto-queue/",\
           "packageDependencies": [\
             ["yocto-queue", "npm:0.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["youtube-player", [\
+        ["npm:5.5.2", {\
+          "packageLocation": "./.yarn/cache/youtube-player-npm-5.5.2-f66fa65a7d-42693af5d7.zip/node_modules/youtube-player/",\
+          "packageDependencies": [\
+            ["youtube-player", "npm:5.5.2"],\
+            ["debug", "virtual:f66fa65a7d3b7c04e2875089593b072f584a774d61176560067bcbb045613b8ab746e44893db374f4b21a720d911470a2069cdd9da622ac9a2732665620f57ef#npm:2.6.9"],\
+            ["load-script", "npm:1.0.0"],\
+            ["sister", "npm:3.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\

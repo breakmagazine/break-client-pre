@@ -81,7 +81,6 @@ export const ArticlePage = () => {
                 </ImageWrapper2>
             </div>
             <InfoTextSet className="text2" title={INFO_TEXT.look1.title} description={INFO_TEXT.look1.description} />
-
             <Space height={36.805} />
             <section>
                 <Image priority className="img3" alt="" width={1314} height={1917} src={IMG_SRC[3]} />
