@@ -107,20 +107,19 @@ const Wrapper = styled(Flex)`
         background-color: #fff;
 
         box-sizing: border-box;
-        padding: 5.27vw 4.51vw 0vw 4.08vw;
+        padding: 5.27vw 4.51vw 8.81vw 4.08vw;
     }
 
     .interview2 {
         position: absolute;
 
         width: 54.44vw;
-        height: 84.16vw;
 
         top: 91.52vw;
         left: -5.138vw;
 
         box-sizing: border-box;
-        padding: 4.79vw 7.91vw 0vw 9.65vw;
+        padding: 4.79vw 7.91vw 6.52vw 9.65vw;
 
         background-size: cover;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -142,14 +141,13 @@ const Wrapper = styled(Flex)`
         position: absolute;
 
         width: 61.18vw;
-        height: 44.236vw;
 
         top: 175.69vw;
 
         background: rgba(0, 0, 0, 0.8);
 
         box-sizing: border-box;
-        padding: 3.402vw 4.51vw 0vw 4.375vw;
+        padding: 3.402vw 4.51vw 2.98vw 4.375vw;
 
         z-index: 3;
     }
@@ -178,12 +176,11 @@ const Wrapper = styled(Flex)`
         position: absolute;
 
         width: 49.305vw;
-        height: 44.263vw;
 
         top: 270.27vw;
         right: 0;
 
         box-sizing: border-box;
-        padding: 5.13vw 3.61vw 0vw 4.58vw;
+        padding: 5.13vw 3.61vw 7.15vw 4.58vw;
     }
 `;

@@ -64,14 +64,13 @@ const Wrapper = styled(Flex)`
         position: absolute;
 
         width: 64.72vw;
-        height: 93.95vw;
 
         left: -4.375vw;
 
         background: rgba(0, 0, 0, 0.8);
 
         box-sizing: border-box;
-        padding: 7.36vw 3.95vw 0vw 8.47vw;
+        padding: 7.36vw 3.95vw 7.98vw 8.47vw;
 
         z-index: 2;
     }
@@ -90,7 +89,6 @@ const Wrapper = styled(Flex)`
         position: absolute;
 
         width: 60.69vw;
-        height: 106.73vw;
 
         top: 91.59vw;
         right: 0;
@@ -98,7 +96,7 @@ const Wrapper = styled(Flex)`
         background: rgba(255, 255, 255, 0.8);
 
         box-sizing: border-box;
-        padding: 4.58vw 4.722vw 0vw 3.95vw;
+        padding: 4.58vw 4.722vw 5.2vw 3.95vw;
 
         z-index: 2;
     }
