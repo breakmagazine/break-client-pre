@@ -86,7 +86,7 @@ const Wrapper = styled(Flex)`
         height: auto;
 
         top: 0;
-        right: -10.48vw;
+        right: -10.833vw;
     }
 
     .section3-img3 {
@@ -96,7 +96,7 @@ const Wrapper = styled(Flex)`
         height: auto;
 
         top: 0;
-        left: -2.98vw;
+        left: -2.63vw;
     }
 
     .section3-interview1 {
