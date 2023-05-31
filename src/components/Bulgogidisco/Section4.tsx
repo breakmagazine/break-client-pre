@@ -49,7 +49,7 @@ export const Section4 = () => {
                 title={interviewData.interview16.question}
                 description={interviewData.interview16.answer}
             />
-            <Space height={60.48} />
+            <Space height={63.4} />
             <Image className="section4-img3" alt="" width={1440} height={2156} src={IMG_SRC[3]} />
             <Image className="section4-img4" alt="" width={1440} height={2156} src={IMG_SRC[4]} />
             <Image className="section4-img5" alt="" width={1440} height={2156} src={IMG_SRC[5]} />
@@ -135,7 +135,7 @@ const Wrapper = styled(Flex)`
     .section4-interview3 {
         position: absolute;
 
-        width: 50.34vw;
+        width: 57.63vw;
         /* height: 21.52vw; */
 
         top: 326.66vw;
