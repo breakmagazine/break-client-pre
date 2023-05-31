@@ -20,11 +20,11 @@ export const ArticlePage = () => {
     const CREDIT = [
         'CREDIT',
         <br />,
-        'Fashion Editor 이주은 @41.1.04, 장선영 @syin.yer',
-        'Photographer 한예림 @yerimhan_',
-        'Hair&Make-up 최윤정 @avo.cad_o0',
-        'Model 최민성 @cccmsg',
-        'Hair&Make-up assistant 이윤서 @2ysstyle',
+        'Fashion Editor 이주은 (@41.1.04), 장선영 (@syin.yer)',
+        'Photographer 한예림 (@yerimhan_)',
+        'Hair&Make-up 최윤정 (@avo.cad_o0)',
+        'Model 최민성 (@cccmsg)',
+        'Hair&Make-up assistant 이윤서 (@2ysstyle)',
         'Web Designer 김소현 (@xoxo._.hyun) 안은빈 (@aneunbn)',
         'Web Developer 강나연 (@nyhibi) 장영준 (@youngjangjoon)',
     ];

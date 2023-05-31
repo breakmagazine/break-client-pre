@@ -16,19 +16,19 @@ const TEXT = {
             'Break Magazine is an independent magazine covering a new generation of fashion and lifestyle. It is distributed free of charge through Tumblbuck and offline distribution.',
         ],
     },
-    CatchPhrase: ' LET’S BREAK !',
+    CatchPhrase: 'LET’S BREAK !',
 };
 
 export const LowerTextArea = () => {
     return (
         <>
-            <Wrapper direction="column">
+            <Wrapper direction="column" align="flex-start" justify="flex-start">
                 <Space height={1.66} />
                 <Flex direction="column" gap={3.05}>
                     <TextSet title={TEXT.Passion.title} description={TEXT.Passion.description} />
                     <TextSet title={TEXT.Connection.title} description={TEXT.Connection.description} />
                 </Flex>
-                <Flex direction="column" align="flex-start">
+                <Flex direction="column" align="flex-start" justify="flex-start">
                     <Space height={3.54} />
                     <Text typo="CatchPhrase">{TEXT.CatchPhrase}</Text>
                     <Space height={3.47} />

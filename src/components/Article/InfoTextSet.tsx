@@ -27,7 +27,7 @@ export const InfoTextSet = ({
                     el === ' ' ? (
                         <br key={index} />
                     ) : (
-                        <Text key={index} typo="BulgogiAnswer" color={color}>
+                        <Text key={index} typo="ClothInfo" color={color}>
                             {el}
                         </Text>
                     )

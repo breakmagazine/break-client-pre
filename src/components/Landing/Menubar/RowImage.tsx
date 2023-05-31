@@ -6,8 +6,8 @@ import Image from 'next/image';
 export const RowImage = ({ img }: { img: string[] }) => {
     return (
         <StyledFlex gap={1.59} align="flex-start" justify="flex-start">
-            <Img className="image" src={img[0]} alt="" width={285} height={428} />
-            <Img className="image" src={img[1]} alt="" width={285} height={428} />
+            <Img priority className="image" src={img[0]} alt="" width={285} height={428} />
+            <Img priority className="image" src={img[1]} alt="" width={285} height={428} />
         </StyledFlex>
     );
 };

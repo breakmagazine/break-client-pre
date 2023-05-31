@@ -3,24 +3,22 @@ import { Flex, Space, Text } from '../common/common';
 import Image from 'next/image';
 import { Interview } from './Interview';
 import interviewJson from '../Bulgogidisco/interview.json';
+import Hwa from '../../assets/svg/hwa.svg';
 
 export const Section3 = () => {
     const IMG_SRC = [
         'https://github.com/breakmagazine/break-client/assets/103591752/87d70b12-a96d-4988-af5e-3eeaec841172',
         'https://github.com/breakmagazine/break-client/assets/103591752/0d735f6f-1fef-4b3d-acc0-fd58d00a3d6b',
+        'https://github.com/breakmagazine/break-client/assets/103591752/c65ff13e-5669-44c5-9440-ef3cd8ebed41',
     ];
     const interviewData = interviewJson;
 
     return (
         <Wrapper direction="column" align="center" justify="flex-start">
+            <Hwa className="hwa" />
+            <Image priority className="section3-img3" alt="" width={876} height={1313} src={IMG_SRC[2]} />
             <Space height={93.95} />
-            <Flex gap={6.52} className="section3-interview0" direction="column" justify="flex-start">
-                <Interview
-                    title={interviewData.interview9.question}
-                    description={interviewData.interview9.answer}
-                    titleColor="#fff"
-                    descriptionColor={'#DADADA'}
-                />
+            <Flex className="section3-interview0" direction="column" justify="flex-start">
                 <Interview
                     title={interviewData.interview10.question}
                     description={interviewData.interview10.answer}
@@ -48,9 +46,6 @@ export const Section3 = () => {
 };
 
 const Wrapper = styled(Flex)`
-    .typo {
-        background-color: pink;
-    }
     position: relative;
 
     width: 100%;
@@ -58,19 +53,28 @@ const Wrapper = styled(Flex)`
 
     box-sizing: border-box;
 
-    overflow: hidden;
+    .hwa {
+        position: absolute;
+
+        top: -44.58vw;
+        z-index: 20;
+    }
+    .typo {
+        background-color: pink;
+    }
 
     .section3-interview0 {
         position: absolute;
 
         width: 64.72vw;
 
-        left: -4.375vw;
+        top: 46.66vw;
+        left: -5.69vw;
 
         background: rgba(0, 0, 0, 0.8);
 
         box-sizing: border-box;
-        padding: 7.36vw 3.95vw 7.98vw 8.47vw;
+        padding: 10.2vw 6.319vw 4.86vw 11.18vw;
 
         z-index: 2;
     }
@@ -81,8 +85,18 @@ const Wrapper = styled(Flex)`
         width: 60.833vw;
         height: auto;
 
-        top: 10.13vw;
-        right: -10.48vw;
+        top: 0;
+        right: -10.833vw;
+    }
+
+    .section3-img3 {
+        position: absolute;
+
+        width: 52.63vw;
+        height: auto;
+
+        top: 0;
+        left: -2.63vw;
     }
 
     .section3-interview1 {
