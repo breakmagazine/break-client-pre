@@ -39,7 +39,7 @@ export const Landing = () => {
             <Flex align="flex-start" justify="flex-start">
                 <Flex className="item item1" direction="column" align="center" justify="space-between">
                     <Logo className="item logo" />
-                    <Flex className="item item1" direction="column" align="flex-start" justify="flex-end">
+                    <Flex direction="column" align="flex-start" justify="flex-end">
                         <LowerMenuButton className="item menu-button-lower" />
                     </Flex>
                 </Flex>
