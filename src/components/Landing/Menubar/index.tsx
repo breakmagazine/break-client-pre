@@ -117,7 +117,8 @@ export const Menubar = (props: MenubarProps) => {
                         onMouseOver={() => handleBulgogidiscoHover()}
                     >
                         계속 뭉그적거리고만 있을 수는 없잖아. 불살라 버리는 거야. 모두 함께 춤을 추자!
-                        <br /> 경계선을 허무는 록 밴드 불고기디스코와 뜨겁게 화합(火合)하다.
+                        <br />
+                        경계선을 허무는 록 밴드 불고기디스코와 뜨겁게 화합(火合)하다.
                     </Text>
                 </Content>
             </MenubarContent>

@@ -42,7 +42,7 @@ export const Section2 = () => {
                 경계선을 허무는 록 밴드 불고기디스코
             </Text>
             <Space height={5.13} />
-            <Flex className="img3-wrapper" gap={0.694} direction="row" justify="space-between">
+            <Flex className="img3-wrapper" direction="row" justify="space-between">
                 <Image priority className="section2-img3" alt="" width={715} height={1071} src={IMG_SRC[3]} />
                 <Image priority className="section2-img3" alt="" width={715} height={1071} src={IMG_SRC[4]} />
             </Flex>
@@ -139,7 +139,7 @@ const Wrapper = styled(Flex)`
     }
 
     .section2-img3 {
-        width: 49.652vw;
+        width: 50vw;
         height: 74.375vw;
     }
 `;
