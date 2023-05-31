@@ -47,12 +47,9 @@ export const Landing = () => {
                     <Flex align="flex-start" justify="space-between">
                         <div className="item item2">2023</div>
                         <div className="item item3">
-                            <StyledMenuButton>
-                                <MenuButton className="item menu-button" onClick={() => setMenubarShow(true)} />
-                                <MenuButtonHover
-                                    className="item menu-button-hover"
-                                    onClick={() => setMenubarShow(true)}
-                                />
+                            <StyledMenuButton onClick={() => setMenubarShow(true)}>
+                                <MenuButton className="item menu-button" />
+                                <MenuButtonHover className="item menu-button-hover" />
                             </StyledMenuButton>
                         </div>
                     </Flex>
