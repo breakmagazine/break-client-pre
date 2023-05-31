@@ -87,7 +87,7 @@ export const Landing = () => {
 
 const Wrapper = styled.div`
     width: 100vw;
-    height: 162.083333vw;
+    height: 162.3vw;
 
     box-sizing: border-box;
 

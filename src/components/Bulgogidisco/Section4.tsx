@@ -18,7 +18,7 @@ export const Section4 = () => {
     return (
         <Wrapper direction="column" align="center" justify="flex-start">
             <Space height={141.18} />
-            <Image priority className="section4-img0" alt="" width={1036} height={1551} src={IMG_SRC[0]} />
+            <Image className="section4-img0" alt="" width={1036} height={1551} src={IMG_SRC[0]} />
             <Flex className="section4-interview0" direction="column" justify="flex-start">
                 <Interview
                     title={interviewData.interview13.question}
@@ -34,8 +34,8 @@ export const Section4 = () => {
                 titleColor="#fff"
                 descriptionColor={'#DADADA'}
             />
-            <Image priority className="section4-img1" alt="" width={1440} height={2156} src={IMG_SRC[1]} />
-            <Image priority className="section4-img2" alt="" width={758} height={1135} src={IMG_SRC[2]} />
+            <Image className="section4-img1" alt="" width={1440} height={2156} src={IMG_SRC[1]} />
+            <Image className="section4-img2" alt="" width={758} height={1135} src={IMG_SRC[2]} />
             <Space height={41.04} />
             <Interview
                 className="section4-interview2"
@@ -50,9 +50,9 @@ export const Section4 = () => {
                 description={interviewData.interview16.answer}
             />
             <Space height={60.48} />
-            <Image priority className="section4-img3" alt="" width={1440} height={2156} src={IMG_SRC[3]} />
-            <Image priority className="section4-img4" alt="" width={1440} height={2156} src={IMG_SRC[4]} />
-            <Image priority className="section4-img5" alt="" width={1440} height={2156} src={IMG_SRC[5]} />
+            <Image className="section4-img3" alt="" width={1440} height={2156} src={IMG_SRC[3]} />
+            <Image className="section4-img4" alt="" width={1440} height={2156} src={IMG_SRC[4]} />
+            <Image className="section4-img5" alt="" width={1440} height={2156} src={IMG_SRC[5]} />
         </Wrapper>
     );
 };
