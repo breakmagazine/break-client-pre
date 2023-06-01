@@ -17,7 +17,7 @@ export default function Document() {
                 <link rel="mask-icon" href="favicon.svg" color="#000" />
                 <link rel="apple-touch-icon" href="favicon.svg" color="#000" />
                 <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
-                <meta property="og:title" content="BREAK" />
+                <meta property="og:title" content="Break" />
                 <meta
                     property="og:image"
                     content="https://github.com/breakmagazine/break-client/assets/103591752/1a682b8f-213e-4c91-8e61-48fe1162d6ad"

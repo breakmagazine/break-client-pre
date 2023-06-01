@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <Head>
-                <title>BREAK</title>
+                <title>Break</title>
             </Head>
             <CacheProvider value={cache}>
                 <Global styles={globalStyle} />
