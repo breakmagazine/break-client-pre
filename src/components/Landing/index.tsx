@@ -37,11 +37,9 @@ export const Landing = () => {
         <Wrapper>
             <Line />
             <Flex align="flex-start" justify="flex-start">
-                <Flex className="item item1" direction="column" align="center" justify="space-between">
+                <Flex className="item item1" direction="column" align="flex-start" justify="space-between">
                     <Logo className="item logo" />
-                    <Flex direction="column" align="flex-start" justify="flex-end">
-                        <LowerMenuButton className="item menu-button-lower" />
-                    </Flex>
+                    <LowerMenuButton className="item menu-button-lower" />
                 </Flex>
                 <div>
                     <Flex align="flex-start" justify="space-between">
@@ -105,13 +103,13 @@ const Wrapper = styled.div`
             width: 5.13vw;
             height: 19.44vw;
 
-            margin-top: 2.98vw;
+            margin: 2.98vw 0 0 2.43vw;
         }
 
         .menu-button-lower {
             width: 6.18vw;
-
-            cursor: pointer;
+            margin: 0;
+            padding: 0;
         }
     }
 
