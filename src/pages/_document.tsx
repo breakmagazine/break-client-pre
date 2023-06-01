@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-title-in-document-head */
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
@@ -17,7 +16,6 @@ export default function Document() {
                 <link rel="icon" href="favicon.svg" />
                 <link rel="mask-icon" href="favicon.svg" color="#000" />
                 <link rel="apple-touch-icon" href="favicon.svg" color="#000" />
-                <title>BREAK</title>
                 <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
                 <meta property="og:title" content="BREAK" />
                 <meta
