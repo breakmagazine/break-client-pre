@@ -110,4 +110,13 @@ export const typo = {
             font-size: ${calcVw(24)};
         }
     `,
+    ClothInfoBold: css`
+        font-family: 'Pretendard';
+        font-weight: 500;
+        font-size: ${calcVw(20)};
+        line-height: 140%;
+        @media (max-width: 576px) {
+            font-size: ${calcVw(24)};
+        }
+    `,
 } as const;
