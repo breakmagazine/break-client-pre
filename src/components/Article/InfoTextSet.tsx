@@ -27,9 +27,14 @@ export const InfoTextSet = ({
                     el === ' ' ? (
                         <br key={index} />
                     ) : (
-                        <Text key={index} typo="ClothInfo" color={color}>
-                            {el}
-                        </Text>
+                        <Flex key={index} direction="row">
+                            <Text key={index} typo="ClothInfoBold" color={color}>
+                                {el.split('*')[0] + ' '}
+                            </Text>
+                            <Text key={index} typo="ClothInfo" color={color}>
+                                {el.split('*')[1]}
+                            </Text>
+                        </Flex>
                     )
                 )}
             </Flex>

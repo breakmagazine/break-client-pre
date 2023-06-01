@@ -33,27 +33,27 @@ export const ArticlePage = () => {
         look1: {
             title: 'LOOK1',
             description: [
-                'Top 에디터 개인 소장품',
-                'Shoes 에디터 개인 소장품',
-                'Acc ROCKING DOCKING PICKING @rockingdockingpicking',
-                'Outer, Bottom 모두 0426x @0426x',
+                'Top*에디터 개인 소장품',
+                'Shoes*에디터 개인 소장품',
+                'Acc*ROCKING DOCKING PICKING',
+                'Outer, Bottom*모두 0426x',
             ],
         },
         look2: {
             title: 'LOOK2',
-            description: ['Top toritoritoritori @toritoritoritori__', 'Bottom Helmut Lang', 'Acc ae'],
+            description: ['Top*toritoritoritori', 'Bottom*Helmut Lang', 'Acc*ae'],
         },
         look3: {
             title: 'LOOK3',
-            description: ['Top sulvam', 'Bottom Per Gotesson', 'Shoes Salomon', 'Acc Our Legacy, ae'],
+            description: ['Top*sulvam', 'Bottom*Per Gotesson', 'Shoes*Salomon', 'Acc*Our Legacy, ae'],
         },
         look4: {
             title: 'LOOK4',
-            description: ['Top Stefan Cooke', 'Bottom Per Gotesson', 'Shoes Colorcolla @colorcolla_official', 'Acc ae'],
+            description: ['Top*Stefan Cooke', 'Bottom*Per Gotesson', 'Shoes*Colorcolla', 'Acc ae'],
         },
         look5: {
             title: 'LOOK5',
-            description: ['Top PAYNESTAR', 'Bottom Per Gotesson', 'Acc Our Legacy'],
+            description: ['Top*PAYNESTAR', 'Bottom*Per Gotesson', 'Acc*Our Legacy'],
         },
     };
 
