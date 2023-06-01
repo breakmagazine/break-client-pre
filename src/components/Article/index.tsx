@@ -80,21 +80,24 @@ export const ArticlePage = () => {
                     />
                 </ImageWrapper2>
             </div>
-            <InfoTextSet className="text2" title={INFO_TEXT.look1.title} description={INFO_TEXT.look1.description} />
-            <Space height={36.805} />
+            <Space height={36.8} />
             <section>
-                <Image priority className="img3" alt="" width={1314} height={1917} src={IMG_SRC[3]} />
-                <InfoTextSet
-                    className="text"
-                    title={INFO_TEXT.look3.title}
-                    description={INFO_TEXT.look3.description}
-                    color="#fff"
-                />
+                <div>
+                    <Image priority className="img3" alt="" width={1314} height={1917} src={IMG_SRC[3]} />
+                    <InfoTextSet
+                        className="text"
+                        title={INFO_TEXT.look3.title}
+                        description={INFO_TEXT.look3.description}
+                        color="#fff"
+                    />
+                </div>
+                <div>
+                    <Image priority className="img3-1" alt="" width={1314} height={1917} src={IMG_SRC[3]} />
+                </div>
             </section>
+
+            <section></section>
             <Space height={136.875} />
-            <section>
-                <Image priority className="img3-1" alt="" width={1314} height={1917} src={IMG_SRC[3]} />
-            </section>
             <Space height={136.875} />
             <Space height={28.47} />
             <ImageWrapper3>
@@ -170,7 +173,7 @@ const Wrapper = styled(Flex)`
         position: absolute;
 
         width: 91.25vw;
-        height: auto;
+        height: 136.875vw;
 
         left: 22.7vw;
     }
@@ -179,8 +182,9 @@ const Wrapper = styled(Flex)`
         position: absolute;
 
         width: 91.25vw;
-        height: auto;
+        height: 136.875vw;
 
+        top: 136.875vw;
         right: 19.86vw;
     }
 
