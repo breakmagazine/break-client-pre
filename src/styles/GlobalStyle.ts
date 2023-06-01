@@ -9,6 +9,7 @@ export const globalStyle = css`
     body {
         font-family: 'Helvetica';
         height: 100%;
+        overflow-x: hidden;
     }
     button {
         background: inherit;
