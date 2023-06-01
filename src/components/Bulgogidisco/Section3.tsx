@@ -58,6 +58,7 @@ const Wrapper = styled(Flex)`
 
         top: -44.58vw;
         z-index: 20;
+        left: 1.45vw;
     }
     .typo {
         background-color: pink;
