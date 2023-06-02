@@ -6,13 +6,13 @@ const TEXT = {
     Passion: {
         title: 'Passion',
         description: [
-            'Break is a magazine made by fearless people in their 20s.The passion of the outspoken breakers is also reflected in the results.',
+            'Break is a magazine made by fearless people in their 20s. The passion of the outspoken breakers is also reflected in the results.',
         ],
     },
     Connection: {
         title: 'Connection',
         description: [
-            "We are connected to you. Songs of artists I've liked, my outfit these days, and even the space I want to visit. You can find them all on the brakes.",
+            "We are connected to you. Songs of artists I've liked, my outfit these days, and even the space I want to visit. You can find them all on the break.",
             'Break Magazine is an independent magazine covering a new generation of fashion and lifestyle. It is distributed free of charge through Tumblbuck and offline distribution.',
         ],
     },
