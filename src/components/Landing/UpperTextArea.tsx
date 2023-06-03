@@ -6,14 +6,14 @@ const TEXT = {
     Freedom: {
         title: 'Freedom',
         description: [
-            'In the break, your imagination unfolds into reality',
+            'In the break, your imagination unfolds into reality.',
             'Breaker* works in a free environment where each person is respected, and creative planning is born underneath.',
         ],
     },
     Diversity: {
         title: 'Diversity',
         description: [
-            "Don't discuss brakes without 'diversity'. ",
+            "Don't discuss break without 'diversity'. ",
             'Breakers with different personalities gather to create unique content.',
         ],
     },

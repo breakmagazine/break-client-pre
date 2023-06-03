@@ -12,7 +12,7 @@ const TEXT = {
     Connection: {
         title: 'Connection',
         description: [
-            "We are connected to you. Songs of artists I've liked, my outfit these days, and even the space I want to visit. You can find them all on the break.",
+            "We are connected to you. Songs of artists you've liked, your outfit these days, and even the space you want to visit. You can find them all on the break.",
             'Break Magazine is an independent magazine covering a new generation of fashion and lifestyle. It is distributed free of charge through Tumblbuck and offline distribution.',
         ],
     },
